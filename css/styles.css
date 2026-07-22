@@ -715,6 +715,23 @@ section { position: relative; }
   color: rgba(250,246,239,0.5);
 }
 .site-footer__bottom p + p { margin-top: 6px; }
+.site-footer__houzz {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 16px;
+  padding: 8px 18px;
+  border: 1px solid rgba(250,246,239,0.25);
+  border-radius: 999px;
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: rgba(250,246,239,0.78);
+  text-decoration: none;
+  transition: border-color 0.3s var(--ease-out), color 0.3s var(--ease-out);
+}
+.site-footer__houzz:hover { border-color: var(--gold-light); color: var(--gold-light); }
 .site-footer__credit a {
   color: rgba(250,246,239,0.5);
   text-decoration: underline;
