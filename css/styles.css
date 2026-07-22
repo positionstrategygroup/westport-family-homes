@@ -715,10 +715,13 @@ section { position: relative; }
   color: rgba(250,246,239,0.5);
 }
 .site-footer__bottom p + p { margin-top: 6px; }
+.site-footer__houzz-row {
+  text-align: center;
+  padding: 0 var(--gutter) 26px;
+}
 .site-footer__houzz {
   display: inline-flex;
   align-items: center;
-  margin-bottom: 16px;
   padding: 8px 18px;
   border: 1px solid rgba(250,246,239,0.25);
   border-radius: 999px;
