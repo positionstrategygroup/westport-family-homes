@@ -1,0 +1,149 @@
+name: Scheduled article publish
+
+# Publishes a staged article at a set time, without depending on any local machine.
+# Staged articles live in .scheduled/<slug>/ with a publish.json manifest.
+
+on:
+  schedule:
+    # 11:50 UTC = 7:50am EDT. GitHub's scheduled runners are often delayed at the
+    # top of the hour, so this fires early and the job waits until the exact
+    # target time before publishing.
+    - cron: '50 11 * * *'
+  workflow_dispatch:        # allows a manual "Run workflow" from the Actions tab
+
+permissions:
+  contents: write
+  pages: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Find articles due for publishing
+        id: scan
+        run: |
+          set -euo pipefail
+          NOW_EPOCH=$(date -u +%s)
+          DUE=""
+          for manifest in .scheduled/*/publish.json; do
+            [ -e "$manifest" ] || continue
+            slug=$(basename "$(dirname "$manifest")")
+            publish_at=$(jq -r '.publish_at_utc' "$manifest")
+            target_epoch=$(date -u -d "$publish_at" +%s)
+            if [ "$NOW_EPOCH" -ge "$((target_epoch - 900))" ]; then
+              echo "DUE: $slug (target $publish_at)"
+              DUE="$slug"
+              echo "target_epoch=$target_epoch" >> "$GITHUB_OUTPUT"
+              break
+            else
+              echo "not yet due: $slug (target $publish_at)"
+            fi
+          done
+          echo "slug=$DUE" >> "$GITHUB_OUTPUT"
+
+      - name: Wait until exact publish time
+        if: steps.scan.outputs.slug != ''
+        run: |
+          set -euo pipefail
+          TARGET=${{ steps.scan.outputs.target_epoch }}
+          NOW=$(date -u +%s)
+          WAIT=$(( TARGET - NOW ))
+          if [ "$WAIT" -gt 0 ]; then
+            echo "Waiting ${WAIT}s until exact publish time..."
+            sleep "$WAIT"
+          else
+            echo "Target time already passed by $(( -WAIT ))s, publishing now."
+          fi
+
+      - name: Publish article
+        if: steps.scan.outputs.slug != ''
+        run: |
+          set -euo pipefail
+          SLUG="${{ steps.scan.outputs.slug }}"
+          SRC=".scheduled/$SLUG"
+
+          # 1. Move the article page into place
+          mkdir -p "insights/$SLUG"
+          cp "$SRC/index.html" "insights/$SLUG/index.html"
+
+          # 2. Insert the insights index card as the newest (first) card
+          python3 - "$SRC/insights-card.html" <<'PY'
+          import sys, io
+          card = io.open(sys.argv[1], encoding='utf-8').read().rstrip('\n')
+          path = 'insights/index.html'
+          html = io.open(path, encoding='utf-8').read()
+          anchor = '    <div class="insights__grid">'
+          assert anchor in html, 'insights__grid anchor not found'
+          html = html.replace(anchor, anchor + '\n' + card, 1)
+          io.open(path, 'w', encoding='utf-8').write(html)
+          print('insights index updated')
+          PY
+
+          # 3. Insert the sitemap entry before </urlset>
+          python3 - "$SRC/sitemap-entry.xml" <<'PY'
+          import sys, io
+          entry = io.open(sys.argv[1], encoding='utf-8').read().rstrip('\n')
+          path = 'sitemap.xml'
+          xml = io.open(path, encoding='utf-8').read()
+          assert '</urlset>' in xml, 'urlset close tag not found'
+          xml = xml.replace('</urlset>', entry + '\n</urlset>', 1)
+          io.open(path, 'w', encoding='utf-8').write(xml)
+          print('sitemap updated')
+          PY
+
+          # 4. Remove the staging folder so it cannot publish twice
+          rm -rf "$SRC"
+
+          # 5. Commit and push
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Scheduled publish: $SLUG"
+          git push
+
+      - name: Trigger GitHub Pages rebuild
+        if: steps.scan.outputs.slug != ''
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Pushes made with GITHUB_TOKEN do not automatically trigger the Pages
+          # build, so request one explicitly.
+          gh api -X POST "repos/${GITHUB_REPOSITORY}/pages/builds" || true
+
+      - name: Verify the article is live
+        if: steps.scan.outputs.slug != ''
+        run: |
+          set -euo pipefail
+          SLUG="${{ steps.scan.outputs.slug }}"
+          URL="https://www.westportfamilyhomes.com/insights/$SLUG/"
+          for i in $(seq 1 40); do
+            code=$(curl -s -o /dev/null -w "%{http_code}" "$URL")
+            if [ "$code" = "200" ]; then
+              echo "LIVE: $URL"
+              exit 0
+            fi
+            echo "attempt $i: $code"
+            sleep 15
+          done
+          echo "::error::Article did not go live at $URL within the timeout"
+          exit 1
+
+      - name: Ping IndexNow
+        if: steps.scan.outputs.slug != ''
+        run: |
+          SLUG="${{ steps.scan.outputs.slug }}"
+          curl -s -X POST "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json" \
+            -d "{
+              \"host\": \"www.westportfamilyhomes.com\",
+              \"key\": \"89214ce33a3e4bbe8df8ae1a9247c0cc\",
+              \"keyLocation\": \"https://www.westportfamilyhomes.com/89214ce33a3e4bbe8df8ae1a9247c0cc.txt\",
+              \"urlList\": [
+                \"https://www.westportfamilyhomes.com/insights/$SLUG/\",
+                \"https://www.westportfamilyhomes.com/insights/\",
+                \"https://www.westportfamilyhomes.com/sitemap.xml\"
+              ]
+            }" || true
