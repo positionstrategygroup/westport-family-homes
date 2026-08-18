@@ -10,6 +10,15 @@ on:
     # target time before publishing.
     - cron: '50 11 * * *'
   workflow_dispatch:        # allows a manual "Run workflow" from the Actions tab
+    inputs:
+      dry_run:
+        description: 'Exercise the publish steps without committing or pushing'
+        type: boolean
+        default: false
+      force_due:
+        description: 'Treat the next staged article as due (for testing only)'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -27,12 +36,19 @@ jobs:
         run: |
           set -euo pipefail
           NOW_EPOCH=$(date -u +%s)
+          FORCE_DUE="${{ inputs.force_due }}"
           DUE=""
           for manifest in .scheduled/*/publish.json; do
             [ -e "$manifest" ] || continue
             slug=$(basename "$(dirname "$manifest")")
             publish_at=$(jq -r '.publish_at_utc' "$manifest")
             target_epoch=$(date -u -d "$publish_at" +%s)
+            if [ "$FORCE_DUE" = "true" ]; then
+              echo "FORCED DUE (test): $slug"
+              DUE="$slug"
+              echo "target_epoch=$NOW_EPOCH" >> "$GITHUB_OUTPUT"
+              break
+            fi
             if [ "$NOW_EPOCH" -ge "$((target_epoch - 900))" ]; then
               echo "DUE: $slug (target $publish_at)"
               DUE="$slug"
@@ -97,7 +113,20 @@ jobs:
           # 4. Remove the staging folder so it cannot publish twice
           rm -rf "$SRC"
 
-          # 5. Commit and push
+          # 5. Commit and push (skipped entirely on a dry run)
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            echo "=== DRY RUN: no commit, no push. Changes that WOULD be made: ==="
+            git add -A
+            git status --short
+            echo "=== sitemap validity check ==="
+            python3 -c "import xml.etree.ElementTree as ET; ET.parse('sitemap.xml'); print('sitemap.xml is valid XML')"
+            echo "=== new article present? ==="
+            test -f "insights/$SLUG/index.html" && echo "OK: insights/$SLUG/index.html" || (echo "MISSING" && exit 1)
+            echo "=== card inserted into insights index? ==="
+            grep -c "insights/$SLUG/" insights/index.html
+            exit 0
+          fi
+
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
@@ -105,7 +134,7 @@ jobs:
           git push
 
       - name: Trigger GitHub Pages rebuild
-        if: steps.scan.outputs.slug != ''
+        if: steps.scan.outputs.slug != '' && inputs.dry_run != true
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -114,7 +143,7 @@ jobs:
           gh api -X POST "repos/${GITHUB_REPOSITORY}/pages/builds" || true
 
       - name: Verify the article is live
-        if: steps.scan.outputs.slug != ''
+        if: steps.scan.outputs.slug != '' && inputs.dry_run != true
         run: |
           set -euo pipefail
           SLUG="${{ steps.scan.outputs.slug }}"
@@ -132,7 +161,7 @@ jobs:
           exit 1
 
       - name: Ping IndexNow
-        if: steps.scan.outputs.slug != ''
+        if: steps.scan.outputs.slug != '' && inputs.dry_run != true
         run: |
           SLUG="${{ steps.scan.outputs.slug }}"
           curl -s -X POST "https://api.indexnow.org/indexnow" \
