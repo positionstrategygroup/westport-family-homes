@@ -813,6 +813,11 @@ section { position: relative; }
   color: var(--stone);
   text-align: center;
 }
+.article-figure--portrait {
+  max-width: 360px;
+  margin: 8px auto 40px;
+}
+.article-figure--portrait img { aspect-ratio: 4 / 5; object-fit: cover; }
 .article-quote {
   margin: 40px 0;
   padding: 30px 34px;

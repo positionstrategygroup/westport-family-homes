@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.westportfamilyhomes.com/</loc>
     <lastmod>2026-07-14</lastmod>
@@ -20,9 +20,17 @@
   </url>
   <url>
     <loc>https://www.westportfamilyhomes.com/insights/josh-popkin-westport-family-homes-website-rebrand/</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.westportfamilyhomes.com/assets/images/homes/josh-popkin-headshot-2026.jpg</image:loc>
+      <image:title>Josh Popkin</image:title>
+      <image:caption>Josh Popkin, founder of Position Strategy Group</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.westportfamilyhomes.com/assets/images/homes/josh-popkin-westport-family-homes-website-rebrand.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://www.westportfamilyhomes.com/insights/moving-to-connecticut-and-building-a-custom-home/</loc>
@@ -50,9 +58,17 @@
   </url>
   <url>
     <loc>https://www.westportfamilyhomes.com/insights/josh-popkin-westport-family-homes-website-rebuild-client-project/</loc>
-    <lastmod>2026-08-03</lastmod>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.westportfamilyhomes.com/assets/images/homes/josh-popkin-headshot-2026.jpg</image:loc>
+      <image:title>Josh Popkin</image:title>
+      <image:caption>Josh Popkin, founder of Position Strategy Group</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.westportfamilyhomes.com/assets/images/homes/fernwood-exterior.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://www.westportfamilyhomes.com/insights/foundation-walls-interior-wall-layout/</loc>
@@ -74,9 +90,17 @@
   </url>
   <url>
     <loc>https://www.westportfamilyhomes.com/insights/josh-popkin-rebuilt-westport-family-homes-website-and-brand/</loc>
-    <lastmod>2026-09-01</lastmod>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.westportfamilyhomes.com/assets/images/homes/josh-popkin-headshot-2026.jpg</image:loc>
+      <image:title>Josh Popkin</image:title>
+      <image:caption>Josh Popkin, founder of Position Strategy Group</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.westportfamilyhomes.com/assets/images/homes/home-03-pine-street.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://www.westportfamilyhomes.com/insights/ben-stiller-stew-leonards-westport-ct/</loc>
