@@ -85,6 +85,17 @@ jobs:
           mkdir -p "insights/$SLUG"
           cp "$SRC/index.html" "insights/$SLUG/index.html"
 
+          # 1b. Add the site-traffic tag (human visit tracking for the traffic dashboard) if the page lacks it
+          python3 - "insights/$SLUG/index.html" <<'PY'
+          import sys, io
+          p = sys.argv[1]
+          h = io.open(p, encoding='utf-8').read()
+          tag = "<!-- site-traffic --><script>(function(){try{if(localStorage.getItem('st_off'))return;var q=new URLSearchParams(location.search);var d=JSON.stringify({p:location.pathname,r:document.referrer,u:q.get('utm_source')||''});if(!navigator.sendBeacon||!navigator.sendBeacon('https://traffic.positionstrategygroup.com/__st?s=westportfamilyhomes.com',d)){fetch('https://traffic.positionstrategygroup.com/__st?s=westportfamilyhomes.com',{method:'POST',body:d,keepalive:true,mode:'no-cors'})}}catch(e){}})();</script>"
+          if 'site-traffic' not in h and '</body>' in h:
+              io.open(p, 'w', encoding='utf-8').write(h.replace('</body>', tag + '\n</body>', 1))
+              print('site-traffic tag added')
+          PY
+
           # 2. Insert the insights index card as the newest (first) card
           python3 - "$SRC/insights-card.html" <<'PY'
           import sys, io
