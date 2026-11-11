@@ -873,6 +873,37 @@ section { position: relative; }
 .reveal-word { opacity: 0; transform: translateY(14px); }
 
 /* ===================== Responsive ===================== */
+/* footer guides row (aeo pass 11/11/26) */
+.site-footer__guides {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--gutter) 40px;
+  text-align: center;
+}
+.site-footer__guides h3 {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+.site-footer__guides-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 26px;
+}
+.site-footer__guides-list a {
+  font-size: 0.88rem;
+  color: rgba(250,246,239,0.78);
+  text-decoration: none;
+  transition: color 0.3s var(--ease-out);
+}
+.site-footer__guides-list a:hover { color: var(--gold-light); }
+.insights__lead { color: var(--ink-soft); font-size: 1.02rem; line-height: 1.65; margin-top: 18px; }
+
 @media (max-width: 1024px) {
   .listing { grid-template-columns: 1fr; }
   .listing__media { order: 2; }
