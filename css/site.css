@@ -632,6 +632,12 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .card:focus-within, .lead-card:focus-within { border-radius: calc(var(--r) + 6px); }
 .skip { border-radius: var(--r-pill); }
 
+/* Section intros (11/12): one plain paragraph under each homepage H2, so answer engines get a lead. */
+.neighbor__lede { margin-top: 24px; max-width: 30em; font-size: 16.5px; line-height: 1.7; color: rgba(250, 246, 239, .78); }
+.faq__lede { margin-top: 22px; max-width: 24em; font-size: 16.5px; line-height: 1.7; color: var(--stone); }
+.insights__lede { margin-top: 20px; max-width: 34em; font-size: 16.5px; line-height: 1.7; color: var(--stone); }
+.contact__lede { margin: 22px auto 0; max-width: 34em; font-size: 17px; line-height: 1.7; color: var(--stone); text-wrap: balance; }
+
 /* ---------- Live additions (11/12): elements the older articles use ---------- */
 .prose h3 { margin-top: 1.9em; font: 500 27px/1.25 var(--serif); color: var(--ink); }
 .prose h3 + p, .prose h3 + ul { margin-top: .6em; }

@@ -54,6 +54,8 @@ ARTICLES = {
         ('Why Foundation Walls Matter in a New Home | Westport Family Homes', 'Foundation Walls'),
     'insights/inside-5-baldwin-place-a-family-centered-floor-plan-in-westport-connecticut/index.html':
         ('Inside 5 Baldwin Place: A Family Floor Plan | Westport Family Homes', 'Inside 5 Baldwin Place'),
+    'insights/5-baldwin-place-a-private-retreat-in-the-heart-of-westport/index.html':
+        ('A Private Retreat in the Heart of Westport | Westport Family Homes', 'A Private Retreat'),
     'insights/5-baldwin-place-a-westport-home-designed-to-grow-with-you/index.html':
         ('A Westport Home Designed to Grow With You | Westport Family Homes', 'A Home Designed to Grow'),
     'insights/ben-stiller-stew-leonards-westport-ct/index.html':
