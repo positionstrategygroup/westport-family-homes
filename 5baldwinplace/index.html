@@ -106,12 +106,12 @@
   <a class="logo" href="#top" aria-label="5 Baldwin Place, back to top">5 Baldwin Place</a>
   <div class="right">
     <a class="chip" href="#westport">Westport</a>
-    <a class="chip" href="mailto:lori.popkin@cbmoves.com?subject=5%20Baldwin%20Place%20showing" target="_blank" rel="noopener">Arrange a Showing</a>
-    <a class="chip enquire" href="mailto:lori.popkin@cbmoves.com?subject=5%20Baldwin%20Place%20showing" target="_blank" rel="noopener">Arrange a Showing</a>
+    <a class="chip" href="mailto:lori.popkin@cbmoves.com?subject=5%20Baldwin%20Place%20showing">Arrange a Showing</a>
+    <a class="chip enquire" href="mailto:lori.popkin@cbmoves.com?subject=5%20Baldwin%20Place%20showing">Arrange a Showing</a>
   </div>
 </header>
 
-<a class="edge-tab" id="edgeTab" href="mailto:lori.popkin@cbmoves.com?subject=5%20Baldwin%20Place%20showing" target="_blank" rel="noopener">Schedule a private showing</a>
+<a class="edge-tab" id="edgeTab" href="mailto:lori.popkin@cbmoves.com?subject=5%20Baldwin%20Place%20showing">Schedule a private showing</a>
 
 <main id="top">
 
@@ -281,9 +281,9 @@
       <h2 class="eyebrow" id="h-show">Showings</h2>
       <div class="main">
         <p class="caps t60">Lori Popkin<br>Coldwell Banker</p>
-        <a class="cta" href="mailto:lori.popkin@cbmoves.com?subject=5%20Baldwin%20Place%20showing" target="_blank" rel="noopener">Schedule a private showing</a>
+        <a class="cta" href="mailto:lori.popkin@cbmoves.com?subject=5%20Baldwin%20Place%20showing">Schedule a private showing</a>
         <div class="contact">
-          <div class="r"><span class="k">Email</span><span class="v" id="mail"><a href="mailto:lori.popkin@cbmoves.com?subject=5%20Baldwin%20Place%20showing" target="_blank" rel="noopener">lori.popkin@cbmoves.com</a></span><button class="cp" type="button" data-copy="mail" aria-label="Copy email address">Copy</button></div>
+          <div class="r"><span class="k">Email</span><span class="v" id="mail"><a href="mailto:lori.popkin@cbmoves.com?subject=5%20Baldwin%20Place%20showing">lori.popkin@cbmoves.com</a></span><button class="cp" type="button" data-copy="mail" aria-label="Copy email address">Copy</button></div>
           <div class="r"><span class="k">Cell</span><span class="v" id="phone"><a href="tel:+12039847677" target="_blank" rel="noopener">203-984-7677</a></span><button class="cp" type="button" data-copy="phone" aria-label="Copy cell number">Copy</button></div>
         </div>
       </div>
@@ -291,20 +291,6 @@
   </section>
 </main>
 
-<dialog class="ask" id="ask" aria-labelledby="ask-t">
-  <button class="cp x" type="button" data-close aria-label="Close">Close</button>
-  <h2 class="caps t42" id="ask-t">Private showing</h2>
-  <p class="voice who">Lori Popkin, Coldwell Banker</p>
-  <div class="ways">
-    <a class="cta" data-direct href="https://mail.google.com/mail/?view=cm&fs=1&to=lori.popkin%40cbmoves.com&su=5%20Baldwin%20Place%20showing" target="_blank" rel="noopener">Email from Gmail</a>
-    <a class="cta" data-direct href="https://outlook.office.com/mail/deeplink/compose?to=lori.popkin%40cbmoves.com&subject=5%20Baldwin%20Place%20showing" target="_blank" rel="noopener">Email from Outlook</a>
-    <a class="cta" data-direct href="mailto:lori.popkin@cbmoves.com?subject=5%20Baldwin%20Place%20showing" target="_blank" rel="noopener">Email from this device</a>
-  </div>
-  <div class="contact">
-    <div class="r"><span class="v" id="mail2">lori.popkin@cbmoves.com</span><button class="cp" type="button" data-copy="mail2" aria-label="Copy email address">Copy</button></div>
-    <div class="r"><span class="v" id="phone2"><a href="tel:+12039847677" target="_blank" rel="noopener">203-984-7677</a></span><button class="cp" type="button" data-copy="phone2" aria-label="Copy cell number">Copy</button></div>
-  </div>
-</dialog>
 
 <footer class="wrap">
   <div class="cols">
@@ -338,18 +324,6 @@
     });
   });
 
-  /* showing links: a bare mailto dies inside the artifact frame, so offer a panel */
-  var ask = document.getElementById('ask');
-  document.querySelectorAll('a[href^="mailto:"]:not([data-direct])').forEach(function(a){
-    a.addEventListener('click', function(e){
-      if (!ask.showModal) return;
-      e.preventDefault();
-      ask.showModal();
-    });
-  });
-  ask.addEventListener('click', function(e){
-    if (e.target === ask || e.target.hasAttribute('data-close')) ask.close();
-  });
 
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var haveLibs = window.gsap && window.ScrollTrigger;
