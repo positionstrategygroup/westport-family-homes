@@ -550,7 +550,7 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .a-head h1 em { font-style: italic; text-transform: none; letter-spacing: .01em; }
 .a-meta { margin-top: 28px; font-size: 15px; color: var(--stone); }
 .a-hero img { width: 100%; aspect-ratio: 16 / 8; object-fit: cover; border-radius: var(--r); }
-.prose { max-width: 680px; margin: 0 auto; padding: 88px 0 var(--sec); font-size: 18px; line-height: 1.78; }
+.prose { max-width: 800px; margin: 0 auto; padding: 88px 0 var(--sec); font-size: 18px; line-height: 1.78; }
 .prose > * + * { margin-top: 1.25em; }
 .prose .lead { font: 500 27px/1.45 var(--serif); color: var(--ink); }
 .prose .lead + p { margin-top: 1.6em; }
@@ -563,7 +563,7 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .prose figcaption { margin: 14px 120px 0; font: italic 500 18px/1.45 var(--serif); color: var(--stone); }
 .prose .end { padding-top: 1.6em; border-top: 1px solid var(--rule); margin-top: 2.4em; font-size: 16.5px; color: var(--stone); }
 .prose .end + p { font-size: 16.5px; color: var(--stone); margin-top: .8em; }
-@media (max-width: 980px) {
+@media (max-width: 1120px) {
   .prose figure { margin-left: 0; margin-right: 0; }
   .prose figcaption { margin-left: 0; margin-right: 0; }
 }

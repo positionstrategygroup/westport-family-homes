@@ -24,7 +24,7 @@ SITE = 'https://www.westportfamilyhomes.com'
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 V1 = os.path.expanduser('~/Desktop/Claude/WFH Redesign 2026-11/v1-traditional')
 SHARED = os.path.expanduser('~/Desktop/Claude/WFH Redesign 2026-11/shared/img')
-VER = '20261112'
+VER = '20261112b'
 # pre-redesign copies of the pages this script rewrites (kept outside the served site)
 ORIG = os.path.expanduser('~/Desktop/Claude/WFH Redesign 2026-11/live-originals')
 
