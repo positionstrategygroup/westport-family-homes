@@ -8,7 +8,7 @@
   </url>
   <url>
     <loc>https://www.westportfamilyhomes.com/insights/</loc>
-    <lastmod>2026-11-11</lastmod>
+    <lastmod>2026-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -49,6 +49,32 @@
     <lastmod>2026-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.westportfamilyhomes.com/insights/5-baldwin-place-a-westport-home-designed-to-grow-with-you/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.westportfamilyhomes.com/assets/images/homes/5-baldwin-place-great-room-westport-ct.jpg</image:loc>
+      <image:title>Great room and kitchen at 5 Baldwin Place, Westport, Connecticut</image:title>
+      <image:caption>Great room and kitchen at 5 Baldwin Place, Westport, Connecticut</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.westportfamilyhomes.com/assets/images/homes/5-baldwin-place-kitchen-island-westport-ct.jpg</image:loc>
+      <image:title>Kitchen with a 12-foot stone counter at 5 Baldwin Place, Westport, CT</image:title>
+      <image:caption>Kitchen with a 12-foot stone counter at 5 Baldwin Place, Westport, CT</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.westportfamilyhomes.com/assets/images/homes/5-baldwin-place-primary-bedroom-vaulted-oak-ceiling.jpg</image:loc>
+      <image:title>Primary bedroom with a vaulted oak-beamed ceiling at 5 Baldwin Place, Westport, CT</image:title>
+      <image:caption>Primary bedroom with a vaulted oak-beamed ceiling at 5 Baldwin Place, Westport, CT</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.westportfamilyhomes.com/assets/images/homes/5-baldwin-place-terrace-pool-westport-ct.jpg</image:loc>
+      <image:title>Covered terrace and heated saltwater pool at 5 Baldwin Place, Westport, CT</image:title>
+      <image:caption>Covered terrace and heated saltwater pool at 5 Baldwin Place, Westport, CT</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.westportfamilyhomes.com/insights/inside-5-baldwin-place-a-family-centered-floor-plan-in-westport-connecticut/</loc>
