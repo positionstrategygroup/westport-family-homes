@@ -102,8 +102,10 @@ jobs:
           card = io.open(sys.argv[1], encoding='utf-8').read().rstrip('\n')
           path = 'insights/index.html'
           html = io.open(path, encoding='utf-8').read()
-          anchor = '    <div class="insights__grid">'
-          assert anchor in html, 'insights__grid anchor not found'
+          # v1 design (11/12/26): cards go after this marker; the staged card must use the v1
+          # <article class="card"> markup (copy one from insights/index.html).
+          anchor = '<!-- scheduled-cards -->'
+          assert anchor in html, 'scheduled-cards anchor not found'
           html = html.replace(anchor, anchor + '\n' + card, 1)
           io.open(path, 'w', encoding='utf-8').write(html)
           print('insights index updated')

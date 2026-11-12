@@ -193,7 +193,7 @@ def patch_common(path, doc, kind, image):
         doc = doc.replace('<link rel="canonical"', FAVICON + '<link rel="canonical"', 1)
     doc = re.sub(r'<!-- aeo:og -->\n(?:<meta (?:property|name)="(?:og|twitter):[^>]*>\n)+', '', doc)
     doc = doc.replace('<link rel="canonical"', og_block(doc, url, kind, image) + '<link rel="canonical"', 1)
-    if 'site-footer__guides' not in doc:
+    if 'site-footer__guides' not in doc and 'foot__guides' not in doc:
         anchor = '    <div class="site-footer__houzz-row">' if 'site-footer__houzz-row' in doc else '    <div class="site-footer__bottom">'
         assert anchor in doc, path
         doc = doc.replace(anchor, guides_row(path) + anchor, 1)
@@ -353,7 +353,7 @@ def main():
 
     css = os.path.join(ROOT, 'css/styles.css')
     s = open(css, encoding='utf-8').read()
-    if 'site-footer__guides' not in s:
+    if 'site-footer__guides' not in s and 'foot__guides' not in s:
         # before the first media query so the phone rules still apply after it
         i = s.index('@media (max-width: 1024px)')
         s = s[:i] + CSS.lstrip('\n') + '\n' + s[i:]

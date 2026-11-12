@@ -1,16 +1,16 @@
 <!doctype html>
 <html lang="en">
+<!-- v1-live -->
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Insights | Westport Family Homes</title>
-<meta name="description" content="Guidance, ideas, and perspective on building a custom home in Westport, Connecticut, from the team at Westport Family Homes." />
-
+<script>document.documentElement.classList.add('js')</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="/css/styles.css?v=31" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500&display=swap">
+<link rel="stylesheet" href="/css/site.css?v=20261112">
+<title>Insights | Westport Family Homes</title>
+<meta name="description" content="Guidance, ideas, and perspective on building a custom home in Westport, Connecticut, from the team at Westport Family Homes." />
 
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
 <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />
@@ -166,254 +166,225 @@
 }
 </script>
 </head>
-<body>
-
-<!-- Nav -->
-<header class="site-header" id="siteHeader">
-  <div class="site-header__inner">
-    <a href="/index.html#top" class="wordmark">
-      <img src="/assets/images/icons/logo-full.webp?v=2" alt="Westport Family Homes" class="wordmark__logo" />
-    </a>
-    <nav class="site-nav">
+<body class="page-solid">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap site-header__in">
+    <nav class="nav nav--left" aria-label="Primary">
       <a href="/5baldwinplace/">5 Baldwin Place</a>
-      <a href="/index.html#portfolio">Portfolio</a>
-      <a href="/index.html#spotlight">Sneak Peeks</a>
-      <a href="/index.html#about">About</a>
-      <a href="/insights/">Insights</a>
-      <a href="/index.html#contact" class="site-nav__cta">Contact</a>
+      <a href="/#portfolio">Portfolio</a>
+      <a href="/#about">About</a>
     </nav>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
-      <span></span><span></span><span></span>
+    <a class="wm" href="/" aria-label="Westport Family Homes, home">
+      <span class="wm__mark" aria-hidden="true"></span>
+      <span class="wm__text" aria-hidden="true"><span class="wm__w">Westport</span><span class="wm__f">Family Homes</span></span>
+    </a>
+    <nav class="nav nav--right" aria-label="Secondary">
+      <a href="/insights/" aria-current="page">Insights</a>
+      <a class="nav__inquire" href="/#contact">Inquire</a>
+    </nav>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu">
+      <span class="menu-toggle__label">Menu</span><span class="menu-toggle__bars" aria-hidden="true"></span>
     </button>
   </div>
 </header>
-<div class="mobile-nav" id="mobileNav">
-  <a href="/5baldwinplace/">5 Baldwin Place</a>
-  <a href="/index.html#portfolio">Portfolio</a>
-  <a href="/index.html#spotlight">Sneak Peeks</a>
-  <a href="/index.html#about">About</a>
-  <a href="/insights/">Insights</a>
-  <a href="/index.html#contact">Contact</a>
+<div class="menu" id="menu" hidden>
+  <nav aria-label="Menu">
+    <ul>
+      <li><a href="/5baldwinplace/">5 Baldwin Place</a></li>
+      <li><a href="/#portfolio">Portfolio</a></li>
+      <li><a href="/#peeks">Sneak Peeks</a></li>
+      <li><a href="/#about">About</a></li>
+      <li><a href="/insights/">Insights</a></li>
+      <li><a href="/#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <p class="menu__contact">David Popkin, Owner &amp; Builder<br><a href="tel:12038567678">203-856-7678</a> · <a href="mailto:WestportFHLLC@gmail.com">WestportFHLLC@gmail.com</a></p>
 </div>
 
-<main id="top">
+<main id="main">
+<section class="page-head ground-parch">
+  <div class="wrap">
+    <span class="label">Westport Family Homes</span>
+    <h1>Insights</h1>
+    <p class="page-head__sub">Guidance, ideas, and perspective for building your next home in Westport.</p>
+    <hr class="page-head__rule">
+  </div>
+</section>
 
-  <!-- HERO -->
-  <section class="hero hero--compact" id="hero">
-    <div class="hero__media">
-      <img src="/assets/images/homes/home-04-ridgewood-lane.webp" alt="A Westport, Connecticut custom home built by Westport Family Homes" class="hero__img" id="heroImg" />
-      <div class="hero__scrim"></div>
-    </div>
-    <div class="hero__content">
-      <p class="eyebrow hero__eyebrow reveal-word">Westport Family Homes</p>
-      <h1 class="hero__headline">
-        <span class="reveal-line"><span>Insights</span></span>
-      </h1>
-      <p class="hero__sub hero__sub--lg reveal-fade">Guidance, ideas, and perspective for building your next home in Westport.</p>
-    </div>
-  </section>
-
-  <!-- INSIGHTS LIST -->
-  <section class="insights" id="insights">
-    <div class="insights__head">
-      <p class="eyebrow reveal-fade">Buyer's Guides &amp; Perspective</p>
-      <h2 class="reveal-fade">From Our Team to You</h2>
-      <p class="insights__lead reveal-fade">Every guide here comes from 18 years of building homes in Westport: how to pick a builder, how to plan a floor plan around your family, what to settle before the foundation is poured, and what everyday life in town is like.</p>
+<section class="sec" aria-labelledby="intro-h">
+  <div class="wrap">
+    <div class="intro">
+      <div class="intro__title">
+        <span class="label">Buyer&rsquo;s Guides &amp; Perspective</span>
+        <h2 class="display" id="intro-h">From Our Team to You</h2>
+      </div>
+      <p>Every guide here comes from 18 years of building homes in Westport: how to pick a builder, how to plan a floor plan around your family, what to settle before the foundation is poured, and what everyday life in town is like.</p>
     </div>
 
-    <div class="insights__grid">
-      <a class="insight-card reveal-up" href="/insights/5-baldwin-place-a-westport-home-designed-to-grow-with-you/">
-        <div class="insight-card__media">
-          <img src="/assets/images/homes/5-baldwin-place-great-room-westport-ct.jpg" alt="Great room and kitchen at 5 Baldwin Place in Westport, Connecticut" width="1800" height="1200" loading="lazy" />
-        </div>
-        <p class="insight-card__meta">Featured Listing &middot; November 12, 2026</p>
-        <h3>A Westport Home Designed to Grow With You</h3>
+    <article class="lead-card">
+      <div class="card__media"><img src="/assets/images/v1/great-room-1600.webp" srcset="/assets/images/v1/great-room-800.webp 800w, /assets/images/v1/great-room-1600.webp 1600w, /assets/images/v1/great-room-2400.webp 2400w" sizes="(max-width: 960px) 100vw, 760px" width="1600" height="1067" alt="Great room and kitchen at 5 Baldwin Place in Westport, Connecticut" loading="lazy" decoding="async"></div>
+      <div class="lead-card__body">
+        <span class="label">Featured Listing &middot; November 12, 2026</span>
+        <h2><a href="/insights/5-baldwin-place-a-westport-home-designed-to-grow-with-you/">A Westport Home Designed to Grow With You</a></h2>
         <p>Four finished levels at 5 Baldwin Place, planned for growing children, visiting family, an elevator and a future ADU.</p>
-        <span class="insight-card__link">Read the Article &rarr;</span>
-      </a>
-      <a class="insight-card reveal-up" href="/insights/ben-stiller-stew-leonards-westport-ct/">
-        <div class="insight-card__media">
-          <img src="/assets/images/hero/baldwin-front.webp" alt="A Westport Family Homes new-construction home on a quiet Westport, Connecticut street" loading="lazy" />
-        </div>
-        <p class="insight-card__meta">Life in Westport &middot; September 2, 2026</p>
-        <h3>When Ben Stiller Came to Stew Leonard's &mdash; And What It Says About Life in Westport, CT</h3>
-        <p>Ben Stiller poured his soda at Stew Leonard's in Norwalk, minutes from Westport. A look at what ordinary weekends in Fairfield County are actually like.</p>
-        <span class="insight-card__link">Read the Article &rarr;</span>
-      </a>
-      <a class="insight-card reveal-up" href="/insights/josh-popkin-rebuilt-westport-family-homes-website-and-brand/">
-        <div class="insight-card__media">
-          <img src="/assets/images/homes/home-03-pine-street.webp" alt="Josh Popkin rebuilds the Westport Family Homes website and brand" loading="lazy" />
-        </div>
-        <p class="insight-card__meta">Brand Launch &middot; September 1, 2026</p>
-        <h3>How Josh Popkin Rebuilt the Westport Family Homes Website and Brand</h3>
-        <p>How branding, messaging, technical SEO, and Answer Engine Optimization shaped Westport Family Homes' new digital presence.</p>
-        <span class="insight-card__link">Read the Article &rarr;</span>
-      </a>
-      <a class="insight-card reveal-up" href="/insights/public-and-private-spaces-in-a-custom-home/">
-        <div class="insight-card__media">
-          <img src="/assets/images/homes/public-private-spaces.webp" alt="Connected kitchen, dining, and living areas in a Westport Family Homes build" loading="lazy" />
-        </div>
-        <p class="insight-card__meta">Buyer's Guide &middot; August 20, 2026</p>
-        <h3>Public and Private Spaces in a Custom Home Floor Plan</h3>
+        <span class="card__more" aria-hidden="true"><span>Read the article</span></span>
+      </div>
+    </article>
+
+    <div class="cards all-cards">
+      <!-- scheduled-cards -->
+      <article class="card">
+        <div class="card__media"><img src="/assets/images/v1/westport-compo-1600.webp" srcset="/assets/images/v1/westport-compo-800.webp 800w, /assets/images/v1/westport-compo-1600.webp 1600w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 420px" width="1600" height="1066" alt="Compo Beach in Westport, Connecticut" loading="lazy" decoding="async"></div>
+        <span class="label">Life in Westport &middot; September 2, 2026</span>
+        <h3><a href="/insights/ben-stiller-stew-leonards-westport-ct/">When Ben Stiller Came to Stew Leonard&rsquo;s &mdash; And What It Says About Life in Westport, CT</a></h3>
+        <p>Ben Stiller poured his soda at Stew Leonard&rsquo;s in Norwalk, minutes from Westport. A look at what ordinary weekends in Fairfield County are actually like.</p>
+        <span class="card__more" aria-hidden="true"><span>Read the article</span></span>
+      </article>
+      <article class="card">
+        <div class="card__media"><img src="/assets/images/homes/home-03-pine-street.webp" width="1200" height="694" alt="Josh Popkin rebuilds the Westport Family Homes website and brand" loading="lazy" decoding="async"></div>
+        <span class="label">Brand Launch &middot; September 1, 2026</span>
+        <h3><a href="/insights/josh-popkin-rebuilt-westport-family-homes-website-and-brand/">How Josh Popkin Rebuilt the Westport Family Homes Website and Brand</a></h3>
+        <p>How branding, messaging, technical SEO, and Answer Engine Optimization shaped Westport Family Homes&rsquo; new digital presence.</p>
+        <span class="card__more" aria-hidden="true"><span>Read the article</span></span>
+      </article>
+      <article class="card">
+        <div class="card__media"><img src="/assets/images/homes/public-private-spaces.webp" width="1920" height="1280" alt="Connected kitchen, dining, and living areas in a Westport Family Homes build" loading="lazy" decoding="async"></div>
+        <span class="label">Buyer&rsquo;s Guide &middot; August 20, 2026</span>
+        <h3><a href="/insights/public-and-private-spaces-in-a-custom-home/">Public and Private Spaces in a Custom Home Floor Plan</a></h3>
         <p>Learn how to separate public and private spaces when designing a custom home, including kitchens, living areas, bedrooms, offices, and flex rooms.</p>
-        <span class="insight-card__link">Read the Article &rarr;</span>
-      </a>
-      <a class="insight-card reveal-up" href="/insights/how-to-design-a-floor-plan-for-your-family/">
-        <div class="insight-card__media">
-          <img src="/assets/images/homes/family-floor-plan-bedroom.webp" alt="A primary bedroom in a Westport Family Homes build, showing bed placement, furniture, and access to an adjoining bathroom" loading="lazy" />
-        </div>
-        <p class="insight-card__meta">Buyer's Guide &middot; August 19, 2026</p>
-        <h3>How to Design a Floor Plan Around Your Family's Needs</h3>
+        <span class="card__more" aria-hidden="true"><span>Read the article</span></span>
+      </article>
+      <article class="card">
+        <div class="card__media"><img src="/assets/images/homes/family-floor-plan-bedroom.webp" width="1920" height="1280" alt="A primary bedroom in a Westport Family Homes build, showing bed placement, furniture, and access to an adjoining bathroom" loading="lazy" decoding="async"></div>
+        <span class="label">Buyer&rsquo;s Guide &middot; August 19, 2026</span>
+        <h3><a href="/insights/how-to-design-a-floor-plan-for-your-family/">How to Design a Floor Plan Around Your Family&rsquo;s Needs</a></h3>
         <p>Learn how to plan bedrooms, bathrooms, room sizes, shared spaces, and future needs when designing a custom home floor plan.</p>
-        <span class="insight-card__link">Read the Article &rarr;</span>
-      </a>
-      <a class="insight-card reveal-up" href="/insights/foundation-walls-interior-wall-layout/">
-        <div class="insight-card__media">
-          <img src="/assets/images/homes/foundation-interior-walls.webp" alt="An open, unfinished room in a Westport Family Homes build showing interior wall layout and structural framing" loading="lazy" />
-        </div>
-        <p class="insight-card__meta">Buyer's Guide &middot; August 9, 2026</p>
-        <h3>Why Foundation Walls and Interior Wall Layout Matter in New Home Construction</h3>
+        <span class="card__more" aria-hidden="true"><span>Read the article</span></span>
+      </article>
+      <article class="card">
+        <div class="card__media"><img src="/assets/images/homes/foundation-interior-walls.webp" width="1920" height="1280" alt="An open, unfinished room in a Westport Family Homes build showing interior wall layout and structural framing" loading="lazy" decoding="async"></div>
+        <span class="label">Buyer&rsquo;s Guide &middot; August 9, 2026</span>
+        <h3><a href="/insights/foundation-walls-interior-wall-layout/">Why Foundation Walls and Interior Wall Layout Matter in New Home Construction</a></h3>
         <p>Learn how foundation walls and interior wall placement affect floor strength, room layout, and the long-term performance of a custom home.</p>
-        <span class="insight-card__link">Read the Article &rarr;</span>
-      </a>
-      <a class="insight-card reveal-up" href="/insights/josh-popkin-westport-family-homes-website-rebuild-client-project/">
-        <div class="insight-card__media">
-          <img src="/assets/images/homes/fernwood-exterior.webp" alt="Josh Popkin and Position Strategy Group rebuild the Westport Family Homes website" loading="lazy" />
-        </div>
-        <p class="insight-card__meta">Client Project &middot; August 3, 2026</p>
-        <h3>Josh Popkin &mdash; Westport Family Homes Website Rebuild: A Client Project by Position Strategy Group</h3>
-        <p>Josh Popkin and Position Strategy Group rebuilt Westport Family Homes' brand and website &mdash; covering design, messaging, SEO, and Answer Engine Optimization.</p>
-        <span class="insight-card__link">Read the Article &rarr;</span>
-      </a>
-      <a class="insight-card reveal-up" href="/insights/inside-5-baldwin-place-a-family-centered-floor-plan-in-westport-connecticut/">
-        <div class="insight-card__media">
-          <img src="/assets/images/homes/baldwin-kitchen-great-room.webp" alt="Open kitchen and great room at 5 Baldwin Place in Westport, Connecticut" loading="lazy" />
-        </div>
-        <p class="insight-card__meta">Featured Listing &middot; July 26, 2026</p>
-        <h3>Inside 5 Baldwin Place: A Family-Centered Floor Plan in Westport, Connecticut</h3>
+        <span class="card__more" aria-hidden="true"><span>Read the article</span></span>
+      </article>
+      <article class="card">
+        <div class="card__media"><img src="/assets/images/homes/fernwood-exterior.webp" width="1280" height="810" alt="Josh Popkin and Position Strategy Group rebuild the Westport Family Homes website" loading="lazy" decoding="async"></div>
+        <span class="label">Client Project &middot; August 3, 2026</span>
+        <h3><a href="/insights/josh-popkin-westport-family-homes-website-rebuild-client-project/">Josh Popkin &mdash; Westport Family Homes Website Rebuild: A Client Project by Position Strategy Group</a></h3>
+        <p>Josh Popkin and Position Strategy Group rebuilt Westport Family Homes&rsquo; brand and website &mdash; covering design, messaging, SEO, and Answer Engine Optimization.</p>
+        <span class="card__more" aria-hidden="true"><span>Read the article</span></span>
+      </article>
+      <article class="card">
+        <div class="card__media"><img src="/assets/images/v1/kitchen-great-room-1600.webp" srcset="/assets/images/v1/kitchen-great-room-800.webp 800w, /assets/images/v1/kitchen-great-room-1600.webp 1600w, /assets/images/v1/kitchen-great-room-2400.webp 2400w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 420px" width="1600" height="1067" alt="Open kitchen and great room at 5 Baldwin Place in Westport, Connecticut" loading="lazy" decoding="async"></div>
+        <span class="label">Featured Listing &middot; July 26, 2026</span>
+        <h3><a href="/insights/inside-5-baldwin-place-a-family-centered-floor-plan-in-westport-connecticut/">Inside 5 Baldwin Place: A Family-Centered Floor Plan in Westport, Connecticut</a></h3>
         <p>A room-by-room look at how 5 Baldwin Place delivers on togetherness, privacy, storage, flexibility, and indoor-outdoor living.</p>
-        <span class="insight-card__link">Read the Article &rarr;</span>
-      </a>
-      <a class="insight-card reveal-up" href="/insights/family-floor-plans-in-westport-connecticut-what-to-look-for/">
-        <div class="insight-card__media">
-          <img src="/assets/images/homes/family-great-room-westport.webp" alt="A family great room with fireplace and built-in shelving in a Westport, Connecticut home" loading="lazy" />
-        </div>
-        <p class="insight-card__meta">Buyer's Guide &middot; July 26, 2026</p>
-        <h3>Family Floor Plans in Westport, Connecticut: What to Look For</h3>
+        <span class="card__more" aria-hidden="true"><span>Read the article</span></span>
+      </article>
+      <article class="card">
+        <div class="card__media"><img src="/assets/images/homes/family-great-room-westport.webp" width="1920" height="2560" alt="A family great room with fireplace and built-in shelving in a Westport, Connecticut home" loading="lazy" decoding="async"></div>
+        <span class="label">Buyer&rsquo;s Guide &middot; July 26, 2026</span>
+        <h3><a href="/insights/family-floor-plans-in-westport-connecticut-what-to-look-for/">Family Floor Plans in Westport, Connecticut: What to Look For</a></h3>
         <p>A practical guide to choosing a family-centered home with flexibility, privacy, storage, and everyday comfort.</p>
-        <span class="insight-card__link">Read the Article &rarr;</span>
-      </a>
-      <a class="insight-card reveal-up" href="/insights/what-to-know-before-building-a-custom-home-in-westport-connecticut/">
-        <div class="insight-card__media">
-          <img src="/assets/images/homes/fernwood-exterior.webp" alt="A custom-built home in Westport, Connecticut" loading="lazy" />
-        </div>
-        <p class="insight-card__meta">Buyer's Guide &middot; July 22, 2026</p>
-        <h3>What to Know Before Building a Custom Home in Westport, Connecticut</h3>
+        <span class="card__more" aria-hidden="true"><span>Read the article</span></span>
+      </article>
+      <article class="card">
+        <div class="card__media"><img src="/assets/images/homes/fernwood-exterior.webp" width="1280" height="810" alt="A custom-built home in Westport, Connecticut" loading="lazy" decoding="async"></div>
+        <span class="label">Buyer&rsquo;s Guide &middot; July 22, 2026</span>
+        <h3><a href="/insights/what-to-know-before-building-a-custom-home-in-westport-connecticut/">What to Know Before Building a Custom Home in Westport, Connecticut</a></h3>
         <p>A practical guide to what to know before building a custom home in Westport, Connecticut &mdash; covering the property, budget, team, design, and approvals.</p>
-        <span class="insight-card__link">Read the Article &rarr;</span>
-      </a>
-      <a class="insight-card reveal-up" href="/insights/moving-to-connecticut-and-building-a-custom-home/">
-        <div class="insight-card__media">
-          <img src="/assets/images/homes/home-02-old-orchard.webp" alt="A custom-built home in Westport, Connecticut" loading="lazy" />
-        </div>
-        <p class="insight-card__meta">Family Guide &middot; July 21, 2026</p>
-        <h3>Moving to Connecticut and Building a Custom Home: A Family Guide</h3>
+        <span class="card__more" aria-hidden="true"><span>Read the article</span></span>
+      </article>
+      <article class="card">
+        <div class="card__media"><img src="/assets/images/homes/home-02-old-orchard.webp" width="1200" height="669" alt="A custom-built home in Westport, Connecticut" loading="lazy" decoding="async"></div>
+        <span class="label">Family Guide &middot; July 21, 2026</span>
+        <h3><a href="/insights/moving-to-connecticut-and-building-a-custom-home/">Moving to Connecticut and Building a Custom Home: A Family Guide</a></h3>
         <p>A family guide to moving to Connecticut and building a custom home &mdash; covering Westport, costs, timelines, and what to know before you build.</p>
-        <span class="insight-card__link">Read the Article &rarr;</span>
-      </a>
-      <a class="insight-card reveal-up" href="/insights/josh-popkin-westport-family-homes-website-rebrand/">
-        <div class="insight-card__media">
-          <img src="/assets/images/homes/josh-popkin-westport-family-homes-website-rebrand.webp" alt="Josh Popkin led the Westport Family Homes website rebrand" loading="lazy" />
-        </div>
-        <p class="insight-card__meta">Website Rebrand &middot; July 20, 2026</p>
-        <h3>How Josh Popkin Helped Rebrand Westport Family Homes</h3>
+        <span class="card__more" aria-hidden="true"><span>Read the article</span></span>
+      </article>
+      <article class="card">
+        <div class="card__media"><img src="/assets/images/homes/josh-popkin-westport-family-homes-website-rebrand.webp" width="1600" height="1026" alt="Josh Popkin led the Westport Family Homes website rebrand" loading="lazy" decoding="async"></div>
+        <span class="label">Website Rebrand &middot; July 20, 2026</span>
+        <h3><a href="/insights/josh-popkin-westport-family-homes-website-rebrand/">How Josh Popkin Helped Rebrand Westport Family Homes</a></h3>
         <p>Learn how Josh Popkin and Position Strategy Group led the website strategy, brand positioning, messaging, and digital rebrand for Westport Family Homes.</p>
-        <span class="insight-card__link">Read the Article &rarr;</span>
-      </a>
-      <a class="insight-card reveal-up" href="/insights/how-to-choose-the-best-home-builder-in-westport-connecticut.html">
-        <div class="insight-card__media">
-          <img src="/assets/images/homes/home-04-ridgewood-lane.webp" alt="A Westport, Connecticut custom home built by Westport Family Homes" loading="lazy" />
-        </div>
-        <p class="insight-card__meta">Buyer's Guide &middot; July 16, 2026</p>
-        <h3>How to Choose the Best Home Builder in Westport, Connecticut</h3>
+        <span class="card__more" aria-hidden="true"><span>Read the article</span></span>
+      </article>
+      <article class="card">
+        <div class="card__media"><img src="/assets/images/homes/home-04-ridgewood-lane.webp" width="1200" height="604" alt="A Westport, Connecticut custom home built by Westport Family Homes" loading="lazy" decoding="async"></div>
+        <span class="label">Buyer&rsquo;s Guide &middot; July 16, 2026</span>
+        <h3><a href="/insights/how-to-choose-the-best-home-builder-in-westport-connecticut.html">How to Choose the Best Home Builder in Westport, Connecticut</a></h3>
         <p>What to look for when choosing a Westport home builder, from design quality and communication to lot selection and long-term value.</p>
-        <span class="insight-card__link">Read the Article &rarr;</span>
-      </a>
+        <span class="card__more" aria-hidden="true"><span>Read the article</span></span>
+      </article>
     </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="site-footer" id="contact">
-    <div class="site-footer__cta">
-      <p class="eyebrow reveal-fade">Get in Touch</p>
-      <h2 class="reveal-fade">Let's Build Your Family's Next Chapter</h2>
-      <a href="mailto:WestportFHLLC@gmail.com" class="btn btn--solid reveal-fade">Get in Touch</a>
-    </div>
-
-    <div class="site-footer__grid">
-      <div class="site-footer__brand">
-        <img src="/assets/images/icons/logo-full.webp?v=2" alt="Westport Family Homes" class="site-footer__logo" />
-        <div class="site-footer__badge-chip">
-          <img src="/assets/images/icons/hobi-awards.webp" alt="HOBI Awards &mdash; Home Building Industry Awards, HBRA of Connecticut" class="site-footer__badge" loading="lazy" />
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot__grid">
+      <div class="foot__brand">
+        <a class="wm" href="/" aria-label="Westport Family Homes, home">
+          <span class="wm__mark" aria-hidden="true"></span>
+          <span class="wm__text" aria-hidden="true"><span class="wm__w">Westport</span><span class="wm__f">Family Homes</span></span>
+        </a>
+        <div class="foot__badges">
+          <img src="/assets/images/icons/hobi-awards.webp" width="500" height="500" alt="HOBI Awards, Home Building Industry Awards, HBRA of Connecticut" loading="lazy" decoding="async">
+          <a href="https://www.houzz.com/pro/westportfamilyhomes" rel="noopener">Westport Family Homes on Houzz</a>
         </div>
       </div>
-
-      <div class="site-footer__col">
-        <h3>Explore</h3>
-        <a href="/5baldwinplace/">5 Baldwin Place</a>
-        <a href="/index.html#portfolio">Portfolio</a>
-        <a href="/index.html#spotlight">Sneak Peeks</a>
-        <a href="/index.html#about">About</a>
-        <a href="/insights/">Insights</a>
-      </div>
-
-      <div class="site-footer__col">
+      <nav class="foot__col" aria-labelledby="f-explore">
+        <h3 id="f-explore">Explore</h3>
+        <ul>
+          <li><a href="/5baldwinplace/">5 Baldwin Place</a></li>
+          <li><a href="/#portfolio">Portfolio</a></li>
+          <li><a href="/#peeks">Sneak Peeks</a></li>
+          <li><a href="/#about">About</a></li>
+          <li><a href="/insights/">Insights</a></li>
+        </ul>
+      </nav>
+      <div class="foot__col">
         <h3>Owner &amp; Builder</h3>
-        <p>David Popkin</p>
-        <a href="mailto:WestportFHLLC@gmail.com">WestportFHLLC@gmail.com</a>
-        <a href="tel:12038567678">203&#8209;856&#8209;7678</a>
+        <ul>
+          <li><p>David Popkin</p></li>
+          <li><a href="mailto:WestportFHLLC@gmail.com">WestportFHLLC@gmail.com</a></li>
+          <li><a href="tel:12038567678">203&#8209;856&#8209;7678</a></li>
+        </ul>
       </div>
-
-      <div class="site-footer__col">
+      <div class="foot__col">
         <h3>Real Estate Broker</h3>
-        <p>Lori Popkin, Coldwell Banker</p>
-        <a href="mailto:lori.popkin@cbmoves.com">lori.popkin@cbmoves.com</a>
-        <a href="tel:12039847677">203&#8209;984&#8209;7677</a>
+        <ul>
+          <li><p>Lori Popkin, Coldwell Banker</p></li>
+          <li><a href="mailto:lori.popkin@cbmoves.com">lori.popkin@cbmoves.com</a></li>
+          <li><a href="tel:12039847677">203&#8209;984&#8209;7677</a></li>
+        </ul>
       </div>
     </div>
-
-    <nav class="site-footer__guides" aria-label="Guides from Westport Family Homes">
-      <h3>Guides</h3>
-      <div class="site-footer__guides-list">
-        <a href="/insights/how-to-choose-the-best-home-builder-in-westport-connecticut.html">Choosing a Westport Builder</a>
-        <a href="/insights/what-to-know-before-building-a-custom-home-in-westport-connecticut/">Before You Build</a>
-        <a href="/insights/moving-to-connecticut-and-building-a-custom-home/">Moving to Connecticut</a>
-        <a href="/insights/family-floor-plans-in-westport-connecticut-what-to-look-for/">Family Floor Plans</a>
-        <a href="/insights/how-to-design-a-floor-plan-for-your-family/">Designing a Floor Plan</a>
-        <a href="/insights/public-and-private-spaces-in-a-custom-home/">Public and Private Spaces</a>
-        <a href="/insights/foundation-walls-interior-wall-layout/">Foundation Walls</a>
-        <a href="/insights/inside-5-baldwin-place-a-family-centered-floor-plan-in-westport-connecticut/">Inside 5 Baldwin Place</a>
-        <a href="/insights/5-baldwin-place-a-westport-home-designed-to-grow-with-you/">A Home Designed to Grow</a>
-        <a href="/insights/ben-stiller-stew-leonards-westport-ct/">Life in Westport</a>
-      </div>
+    <nav class="foot__guides" aria-labelledby="f-guides">
+      <h3 id="f-guides">Guides</h3>
+      <ul>
+        <li><a href="/insights/how-to-choose-the-best-home-builder-in-westport-connecticut.html">Choosing a Westport Builder</a></li>
+        <li><a href="/insights/what-to-know-before-building-a-custom-home-in-westport-connecticut/">Before You Build</a></li>
+        <li><a href="/insights/moving-to-connecticut-and-building-a-custom-home/">Moving to Connecticut</a></li>
+        <li><a href="/insights/family-floor-plans-in-westport-connecticut-what-to-look-for/">Family Floor Plans</a></li>
+        <li><a href="/insights/how-to-design-a-floor-plan-for-your-family/">Designing a Floor Plan</a></li>
+        <li><a href="/insights/public-and-private-spaces-in-a-custom-home/">Public and Private Spaces</a></li>
+        <li><a href="/insights/foundation-walls-interior-wall-layout/">Foundation Walls</a></li>
+        <li><a href="/insights/inside-5-baldwin-place-a-family-centered-floor-plan-in-westport-connecticut/">Inside 5 Baldwin Place</a></li>
+        <li><a href="/insights/5-baldwin-place-a-westport-home-designed-to-grow-with-you/">A Home Designed to Grow</a></li>
+        <li><a href="/insights/ben-stiller-stew-leonards-westport-ct/">Life in Westport</a></li>
+      </ul>
     </nav>
-
-    <div class="site-footer__houzz-row">
-      <a href="https://www.houzz.com/pro/westportfamilyhomes" target="_blank" rel="noopener" class="site-footer__houzz">View Us on Houzz</a>
-    </div>
-
-    <div class="site-footer__bottom">
+    <div class="foot__base">
       <p>&copy; 2026 by Westport Family Homes</p>
-      <p class="site-footer__credit"><a href="https://joshpopkin.com" target="_blank" rel="noopener">Positioned by Josh Popkin</a></p>
+      <p class="foot__credit"><a href="https://www.positionstrategygroup.com/" rel="noopener">Position</a></p>
     </div>
-  </footer>
+  </div>
+</footer>
 
-</main>
-
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
-<script src="/js/main.js?v=10"></script>
+<script src="/js/site.js?v=20261112" defer></script>
 <!-- site-traffic --><script>(function(){try{if(localStorage.getItem('st_off'))return;var q=new URLSearchParams(location.search);var d=JSON.stringify({p:location.pathname,r:document.referrer,u:q.get('utm_source')||''});if(!navigator.sendBeacon||!navigator.sendBeacon('https://traffic.positionstrategygroup.com/__st?s=westportfamilyhomes.com',d)){fetch('https://traffic.positionstrategygroup.com/__st?s=westportfamilyhomes.com',{method:'POST',body:d,keepalive:true,mode:'no-cors'})}}catch(e){}})();</script>
 </body>
 </html>

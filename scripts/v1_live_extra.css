@@ -1,0 +1,24 @@
+
+/* ---------- Live additions (11/12): elements the older articles use ---------- */
+.prose h3 { margin-top: 1.9em; font: 500 27px/1.25 var(--serif); color: var(--ink); }
+.prose h3 + p, .prose h3 + ul { margin-top: .6em; }
+.prose ul, .prose ol { padding-left: 1.3em; }
+.prose li + li { margin-top: .45em; }
+.prose li::marker { color: var(--gold-deep); }
+.prose strong { font-weight: 500; color: var(--ink); }
+.prose blockquote:not(.instagram-media) {
+  margin: 2em 0; padding: 4px 0 4px 26px; border-left: 2px solid var(--gold);
+  font: italic 500 24px/1.45 var(--serif); color: var(--ink);
+}
+.prose blockquote cite { display: block; margin-top: 10px; font: 500 12px/1.4 var(--sans); letter-spacing: .18em; text-transform: uppercase; font-style: normal; color: var(--stone); }
+.prose figure.portrait { margin-left: auto; margin-right: auto; max-width: 520px; }
+.prose figure.portrait figcaption { margin-left: 0; margin-right: 0; }
+.prose .instagram-media { margin-left: auto !important; margin-right: auto !important; }
+.a-head .a-meta + .a-meta { margin-top: 6px; }
+.a-meta a { color: inherit; text-decoration-color: var(--gold); text-underline-offset: 3px; }
+@media (max-width: 760px) { .prose h3 { font-size: 23px; } .prose blockquote:not(.instagram-media) { font-size: 21px; } }
+.foot__credit { margin-left: auto; }
+.prose ul { list-style: disc; }
+.prose ol { list-style: decimal; }
+.prose ul ul { list-style: circle; }
+@media (max-width: 760px) { .a-head h1 { font-size: clamp(28px, 7.4vw, 38px); letter-spacing: .03em; } }

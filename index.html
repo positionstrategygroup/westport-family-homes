@@ -1,17 +1,17 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-fix="c">
+<!-- v1-live -->
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500&display=swap">
+<link rel="stylesheet" href="/css/site.css?v=20261112">
 <title>Westport Family Homes | Award-Winning Homes</title>
 <meta name="description" content="Westport Family Homes has designed and built award-winning, energy-efficient homes in Fairfield County, Connecticut, for 18 years. 5 Baldwin Place is ready now." />
 <meta name="google-site-verification" content="mFGQmaK6XxPWEMg6-WPPdB1D88VL3LQ9FCO8Ksy_lbw" />
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="css/styles.css?v=31" />
 
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
 <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />
@@ -163,404 +163,364 @@
 }
 </script>
 </head>
-<body>
-
-<!-- Preloader -->
-<div class="preloader" id="preloader">
-  <div class="preloader__mark">
-    <img src="assets/images/icons/logo-full.webp?v=2" alt="Westport Family Homes" class="preloader__crest" />
-  </div>
-</div>
-
-<!-- Nav -->
-<header class="site-header" id="siteHeader">
-  <div class="site-header__inner">
-    <a href="#top" class="wordmark">
-      <img src="assets/images/icons/logo-full.webp?v=2" alt="Westport Family Homes" class="wordmark__logo" />
-    </a>
-    <nav class="site-nav">
+<body class="has-hero">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap site-header__in">
+    <nav class="nav nav--left" aria-label="Primary">
       <a href="/5baldwinplace/">5 Baldwin Place</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#spotlight">Sneak Peeks</a>
-      <a href="#about">About</a>
-      <a href="/insights/">Insights</a>
-      <a href="#contact" class="site-nav__cta">Contact</a>
+      <a href="/#portfolio">Portfolio</a>
+      <a href="/#about">About</a>
     </nav>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
-      <span></span><span></span><span></span>
+    <a class="wm" href="/" aria-label="Westport Family Homes, home">
+      <span class="wm__mark" aria-hidden="true"></span>
+      <span class="wm__text" aria-hidden="true"><span class="wm__w">Westport</span><span class="wm__f">Family Homes</span></span>
+    </a>
+    <nav class="nav nav--right" aria-label="Secondary">
+      <a href="/insights/">Insights</a>
+      <a class="nav__inquire" href="/#contact">Inquire</a>
+    </nav>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu">
+      <span class="menu-toggle__label">Menu</span><span class="menu-toggle__bars" aria-hidden="true"></span>
     </button>
   </div>
 </header>
-<div class="mobile-nav" id="mobileNav">
-  <a href="/5baldwinplace/">5 Baldwin Place</a>
-  <a href="#portfolio">Portfolio</a>
-  <a href="#spotlight">Sneak Peeks</a>
-  <a href="#about">About</a>
-  <a href="/insights/">Insights</a>
-  <a href="#contact">Contact</a>
+<div class="menu" id="menu" hidden>
+  <nav aria-label="Menu">
+    <ul>
+      <li><a href="/5baldwinplace/">5 Baldwin Place</a></li>
+      <li><a href="/#portfolio">Portfolio</a></li>
+      <li><a href="/#peeks">Sneak Peeks</a></li>
+      <li><a href="/#about">About</a></li>
+      <li><a href="/insights/">Insights</a></li>
+      <li><a href="/#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <p class="menu__contact">David Popkin, Owner &amp; Builder<br><a href="tel:12038567678">203-856-7678</a> · <a href="mailto:WestportFHLLC@gmail.com">WestportFHLLC@gmail.com</a></p>
 </div>
 
-<main id="top">
+<main id="main"><span id="top"></span>
+<section class="hero" data-slideshow aria-label="Inside 5 Baldwin Place">
+  <div class="hero__slides">
+      <img class="hero__slide is-active" src="/assets/images/v1/great-room-1600.webp" srcset="/assets/images/v1/great-room-800.webp 800w, /assets/images/v1/great-room-1600.webp 1600w, /assets/images/v1/great-room-2400.webp 2400w" sizes="100vw" width="2400" height="1600" alt="Great room and kitchen at 5 Baldwin Place, Westport, with glass doors to the lawn" fetchpriority="high">
+      <img class="hero__slide" data-src="/assets/images/v1/primary-bedroom-1600.webp" data-srcset="/assets/images/v1/primary-bedroom-800.webp 800w, /assets/images/v1/primary-bedroom-1600.webp 1600w, /assets/images/v1/primary-bedroom-2400.webp 2400w" width="2400" height="1600" alt="Primary bedroom under a vaulted oak-beamed ceiling at 5 Baldwin Place" aria-hidden="true" decoding="async">
+      <img class="hero__slide" data-src="/assets/images/v1/kitchen-island-1600.webp" data-srcset="/assets/images/v1/kitchen-island-800.webp 800w, /assets/images/v1/kitchen-island-1600.webp 1600w, /assets/images/v1/kitchen-island-2400.webp 2400w" width="2400" height="1600" alt="Kitchen island with a 12-foot stone counter and oak stools at 5 Baldwin Place" aria-hidden="true" decoding="async">
+      <img class="hero__slide" data-src="/assets/images/v1/terrace-pool-1600.webp" data-srcset="/assets/images/v1/terrace-pool-800.webp 800w, /assets/images/v1/terrace-pool-1600.webp 1600w, /assets/images/v1/terrace-pool-2400.webp 2400w" width="2400" height="1600" alt="Covered stone terrace looking out to the heated saltwater pool at 5 Baldwin Place" aria-hidden="true" decoding="async">
+  </div>
+  <div class="hero__scrim" aria-hidden="true"></div>
+  <div class="wrap hero__content">
+    <p class="label hero__eyebrow">Westport, Connecticut</p>
+    <h1><em>the</em> Westport Home</h1>
+    <p class="hero__sub">Celebrating 18 years of designing and building homes for the families of Westport.</p>
+    <div class="hero__actions">
+      <a class="btn btn--ghost" href="#portfolio">View Portfolio</a>
+      <a class="btn btn--cream" href="/5baldwinplace/">5 Baldwin &middot; Ready Now</a>
+    </div>
+  </div>
+  <div class="hero__caption">
+    <div class="hero__controls">
+        <button class="hero__seg is-active" type="button" aria-label="Show the great room" aria-current="true"><span class="hero__fill"></span></button>
+        <button class="hero__seg" type="button" aria-label="Show the primary suite" aria-current="false"><span class="hero__fill"></span></button>
+        <button class="hero__seg" type="button" aria-label="Show the kitchen" aria-current="false"><span class="hero__fill"></span></button>
+        <button class="hero__seg" type="button" aria-label="Show the terrace and pool" aria-current="false"><span class="hero__fill"></span></button>
+      <button class="hero__pause" type="button" aria-pressed="false">Pause</button>
+    </div>
+    <div class="hero__caps" aria-hidden="true">
+        <p class="hero__cap is-active"><b>The great room</b><span>5 Baldwin Place &middot; Westport, CT</span></p>
+        <p class="hero__cap"><b>The primary suite</b><span>5 Baldwin Place &middot; Westport, CT</span></p>
+        <p class="hero__cap"><b>The kitchen</b><span>5 Baldwin Place &middot; Westport, CT</span></p>
+        <p class="hero__cap"><b>The terrace and pool</b><span>5 Baldwin Place &middot; Westport, CT</span></p>
+    </div>
+  </div>
+</section>
 
-  <!-- HERO -->
-  <section class="hero" id="hero">
-    <div class="hero__media">
-      <img src="assets/images/hero/hero-main.webp" alt="Elegant family living room built by Westport Family Homes" class="hero__img" id="heroImg" />
-      <div class="hero__scrim"></div>
-    </div>
-    <div class="hero__content">
-      <p class="eyebrow hero__eyebrow reveal-word">Award&#8209;Winning Homes</p>
-      <h1 class="hero__headline">
-        <span class="reveal-line"><span>Thoughtfully Built</span></span>
-        <span class="reveal-line"><span>Homes in</span></span>
-        <span class="reveal-line"><span><em>Westport, Connecticut</em></span></span>
-      </h1>
-      <p class="hero__sub hero__sub--lg reveal-fade">Celebrating 18 years of designing and building homes for the families of Westport.</p>
-      <div class="hero__actions reveal-fade">
-        <a href="#portfolio" class="btn btn--ghost-light">View Portfolio</a>
-        <a href="/5baldwinplace/" class="btn btn--solid">5 Baldwin Place &mdash; Ready Now</a>
+<section class="sec feature" id="listing" aria-labelledby="listing-h">
+  <div class="wrap feature__grid">
+    <figure class="feature__media">
+      <img src="/assets/images/v1/living-room-1600.webp" srcset="/assets/images/v1/living-room-800.webp 800w, /assets/images/v1/living-room-1600.webp 1600w, /assets/images/v1/living-room-2400.webp 2400w" sizes="(max-width: 960px) 100vw, 640px" width="1600" height="1067" alt="Living room with a sputnik chandelier and tall windows at 5 Baldwin Place, Westport, CT" loading="lazy" decoding="async">
+    </figure>
+    <div class="feature__body">
+      <span class="label">New Construction &middot; Ready Now</span>
+      <h2 class="display" id="listing-h">5 Baldwin Place</h2>
+      <span class="label feature__place">Westport, Connecticut</span>
+      <p class="feature__desc">Park&#8209;like property has a full&#8209;size saltwater swimming pool and room for a tennis or pickleball court &mdash; a rare offering of space, privacy, and possibility in the heart of Westport.</p>
+      <dl class="facts">
+        <div><dt>Bedrooms</dt><dd>6</dd></div>
+        <div><dt>Bathrooms</dt><dd>8</dd></div>
+        <div><dt>Interior</dt><dd>9,062 sq ft</dd></div>
+        <div><dt>Levels</dt><dd>Four finished</dd></div>
+        <div><dt>Grounds</dt><dd>2.27 acres</dd></div>
+        <div><dt>Pool</dt><dd>Heated saltwater</dd></div>
+        <div><dt>Expansion</dt><dd>Room for a future ADU</dd></div>
+        <div><dt>Occupancy</dt><dd>Immediate</dd></div>
+      </dl>
+      <div class="feature__actions">
+        <a class="btn btn--ink" href="/5baldwinplace/">Tour the Home</a>
+        <a class="btn btn--line" href="https://www.coldwellbankerhomes.com/ct/westport/5-baldwin-pl/pid_72775409/" rel="noopener">Coldwell Banker Listing</a>
       </div>
     </div>
-    <div class="hero__scroll-cue">
-      <span></span>
-      <em>Scroll</em>
-    </div>
-  </section>
+  </div>
+</section>
 
-  <!-- NEW LISTING: 5 BALDWIN PLACE -->
-  <section class="listing" id="listing">
-    <div class="listing__media">
-      <div class="listing__img listing__img--a reveal-clip">
-        <img src="assets/images/hero/baldwin-front.webp" alt="5 Baldwin Place, Westport CT front exterior" loading="lazy" />
-      </div>
-      <div class="listing__img listing__img--b reveal-clip">
-        <img src="assets/images/hero/baldwin-living.webp" alt="5 Baldwin Place, Westport CT gated driveway entrance" loading="lazy" />
-      </div>
-    </div>
-    <div class="listing__content">
-      <p class="eyebrow reveal-fade">New Construction &middot; Ready Now</p>
-      <h2 class="reveal-fade">5 Baldwin Place</h2>
-      <p class="listing__address reveal-fade">Westport, Connecticut</p>
-      <p class="listing__desc reveal-fade">
-        Park&#8209;like property has a full&#8209;size saltwater swimming pool, room for a tennis or
-        pickleball court, and an accessory dwelling unit &mdash; a rare offering of space, privacy, and
-        possibility in the heart of Westport.
-      </p>
-      <ul class="listing__facts reveal-fade">
-        <li><span>2.3</span> Acres</li>
-        <li><span>&#9679;</span> 6 Bedrooms</li>
-        <li><span>&#9679;</span> Saltwater Pool</li>
-        <li><span>&#9679;</span> Tennis / Pickleball Ready</li>
-        <li><span>&#9679;</span> ADU Included</li>
-        <li><span>&#9679;</span> Walkout Lower Level</li>
-      </ul>
-      <div class="listing__actions reveal-fade">
-        <a href="/5baldwinplace/" class="btn btn--solid-dark">Tour the Home</a>
-        <a href="https://www.coldwellbankerhomes.com/ct/westport/5-baldwin-pl/pid_72775409/" target="_blank" rel="noopener" class="btn btn--ghost-dark">Coldwell Banker Listing</a>
-      </div>
-    </div>
-  </section>
+<section class="stats ground-parch" aria-label="Westport Family Homes at a glance">
+  <div class="wrap stats__row">
+    <p class="stat"><span class="stat__n">18+</span><span class="stat__l">Years Building</span></p>
+    <p class="stat"><span class="stat__n">2</span><span class="stat__l">2025 HOBI Awards</span></p>
+    <p class="stat"><span class="stat__n">30+</span><span class="stat__l">Years in Westport</span></p>
+  </div>
+</section>
 
-  <!-- STATS -->
-  <section class="stats">
-    <div class="stats__grid">
-      <div class="stat">
-        <span class="stat__num" data-count="18" data-suffix="+">0</span>
-        <span class="stat__label">Years Building</span>
+<section class="sec" id="portfolio" aria-labelledby="portfolio-h">
+  <div class="wrap">
+    <div class="head">
+      <div class="head__title">
+        <span class="label">Examples of Recent Award&#8209;Winning Homes</span>
+        <h2 class="display" id="portfolio-h">Custom Homes, Built for Westport Families</h2>
       </div>
-      <div class="stat">
-        <span class="stat__num" data-count="2">0</span>
-        <span class="stat__label">2025 HOBI Awards</span>
-      </div>
-      <div class="stat">
-        <span class="stat__num" data-count="30" data-suffix="+">0</span>
-        <span class="stat__label">Years in Westport</span>
-      </div>
+      <p class="head__aside">Every Westport Family Homes property is designed around how a family actually lives.</p>
     </div>
-  </section>
-
-  <!-- PORTFOLIO -->
-  <section class="portfolio" id="portfolio">
-    <div class="portfolio__head">
-      <p class="eyebrow reveal-fade">Examples of Recent Award&#8209;Winning Homes</p>
-      <h2 class="reveal-fade">Custom Homes, Built for Westport Families</h2>
-      <p class="portfolio__intro reveal-fade">
-        Every Westport Family Homes property is designed around how a family actually lives.
-      </p>
-    </div>
-
-    <div class="portfolio__grid" id="portfolioGrid">
-      <a class="home-card reveal-up home-card--award" data-index="1" aria-label="Webb Road">
-        <img src="assets/images/homes/webb-exterior.webp" alt="Webb Road, Westport CT" loading="lazy" />
-        <span class="home-card__badge">HOBI Award Winner</span>
-        <span class="home-card__caption"><strong>Webb Road</strong><em>Westport, CT</em></span>
-      </a>
-      <a class="home-card reveal-up home-card--award" data-index="2" aria-label="Old Orchard Road">
-        <img src="assets/images/homes/home-02-old-orchard.webp" alt="Old Orchard Road, Westport CT" loading="lazy" />
-        <span class="home-card__badge">HOBI Award Winner</span>
-        <span class="home-card__caption"><strong>Old Orchard Road</strong><em>Westport, CT</em></span>
-      </a>
-      <a class="home-card reveal-up home-card--award" data-index="3" aria-label="Pine Street">
-        <img src="assets/images/homes/home-03-pine-street.webp" alt="Pine Street, Westport CT" loading="lazy" />
-        <span class="home-card__badge">HOBI Award Winner</span>
-        <span class="home-card__caption"><strong>Pine Street</strong><em>Westport, CT</em></span>
-      </a>
-      <a class="home-card reveal-up home-card--award" data-index="4" aria-label="Ridgewood Lane">
-        <img src="assets/images/homes/home-04-ridgewood-lane.webp" alt="Ridgewood Lane, Westport CT" loading="lazy" />
-        <span class="home-card__badge">HOBI Award Winner</span>
-        <span class="home-card__caption"><strong>Ridgewood Lane</strong><em>Westport, CT</em></span>
-      </a>
-      <a class="home-card reveal-up" data-index="5" aria-label="Fernwood Road">
-        <img src="assets/images/homes/fernwood-exterior.webp" alt="Fernwood Road, Westport CT" loading="lazy" />
-        <span class="home-card__caption"><strong>Fernwood Road</strong><em>Westport, CT</em></span>
-      </a>
-      <a class="home-card reveal-up" data-index="6" aria-label="Breezy Knoll">
-        <img src="assets/images/homes/home-06-breezy-knoll.webp" alt="Breezy Knoll, Westport CT" loading="lazy" />
-        <span class="home-card__caption"><strong>Breezy Knoll</strong><em>Westport, CT</em></span>
-      </a>
-      <a class="home-card reveal-up" data-index="7" aria-label="Tamarac Road">
-        <img src="assets/images/homes/home-07-tamarac-road.webp" alt="Tamarac Road, Westport CT" loading="lazy" />
-        <span class="home-card__caption"><strong>Tamarac Road</strong><em>Westport, CT</em></span>
-      </a>
-      <a class="home-card reveal-up" data-index="8" aria-label="Keyser Road">
-        <img src="assets/images/homes/home-08-keyser-road.webp" alt="Keyser Road, Westport CT" loading="lazy" />
-        <span class="home-card__caption"><strong>Keyser Road</strong><em>Westport, CT</em></span>
-      </a>
-      <a class="home-card reveal-up" data-index="9" aria-label="Reichert Road">
-        <img src="assets/images/homes/home-09-reichert-road.webp" alt="Reichert Road, Westport CT" loading="lazy" />
-        <span class="home-card__caption"><strong>Reichert Road</strong><em>Westport, CT</em></span>
-      </a>
-      <a class="home-card reveal-up" data-index="10" aria-label="Peters Lane">
-        <img src="assets/images/homes/home-10-peters-lane.webp" alt="Peters Lane, Westport CT" loading="lazy" />
-        <span class="home-card__caption"><strong>Peters Lane</strong><em>Westport, CT</em></span>
-      </a>
-    </div>
-  </section>
-
-  <!-- SPOTLIGHT: HORIZONTAL SCROLL -->
-  <section class="spotlight" id="spotlight">
-    <div class="spotlight__head">
-      <div>
-        <p class="eyebrow reveal-fade">A Closer Look</p>
-        <h2 class="reveal-fade">Sneak Peeks</h2>
-      </div>
-      <div class="spotlight__nav">
-        <button class="spotlight__nav-btn" id="spotlightPrev" aria-label="Previous photo" type="button">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 6l-6 6 6 6"/></svg>
-        </button>
-        <button class="spotlight__nav-btn" id="spotlightNext" aria-label="Next photo" type="button">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 6l6 6-6 6"/></svg>
-        </button>
-      </div>
-    </div>
-    <div class="spotlight__track-wrap">
-      <div class="spotlight__track" id="spotlightTrack">
-        <figure class="spotlight__panel">
-          <img src="assets/images/homes/webb-kitchen.webp" alt="Open-concept kitchen in a Westport Family Homes property" loading="lazy" />
-          <figcaption>An open-concept kitchen built for gathering, with custom millwork and a sightline straight through to the great room.</figcaption>
+    <div class="homes homes--award">
+        <figure class="home">
+          <div class="home__frame"><img src="/assets/images/homes/webb-exterior.webp" width="1600" height="1026" alt="Webb Road, Westport, CT" loading="lazy" decoding="async" sizes="(max-width: 640px) 100vw, 640px"></div>
+          <figcaption><span class="label home__award">HOBI Award Winner</span><span class="home__line"><span class="home__street">Webb Road</span><span class="home__town">Westport, CT</span></span></figcaption>
         </figure>
-        <figure class="spotlight__panel">
-          <img src="assets/images/homes/fernwood-living.webp" alt="Living room in a Westport Family Homes property" loading="lazy" />
-          <figcaption>A reclaimed-wood fireplace wall anchors the living room in warmth and texture.</figcaption>
+        <figure class="home">
+          <div class="home__frame"><img src="/assets/images/homes/home-02-old-orchard.webp" width="1200" height="669" alt="Old Orchard Road, Westport, CT" loading="lazy" decoding="async" sizes="(max-width: 640px) 100vw, 640px"></div>
+          <figcaption><span class="label home__award">HOBI Award Winner</span><span class="home__line"><span class="home__street">Old Orchard Road</span><span class="home__town">Westport, CT</span></span></figcaption>
         </figure>
-        <figure class="spotlight__panel">
-          <img src="assets/images/homes/fernwood-bath.webp" alt="Primary bathroom in a Westport Family Homes property" loading="lazy" />
-          <figcaption>A spa-inspired primary bath, finished with a freestanding soaking tub and natural light.</figcaption>
+        <figure class="home">
+          <div class="home__frame"><img src="/assets/images/homes/home-03-pine-street.webp" width="1200" height="694" alt="Pine Street, Westport, CT" loading="lazy" decoding="async" sizes="(max-width: 640px) 100vw, 640px"></div>
+          <figcaption><span class="label home__award">HOBI Award Winner</span><span class="home__line"><span class="home__street">Pine Street</span><span class="home__town">Westport, CT</span></span></figcaption>
         </figure>
-        <figure class="spotlight__panel">
-          <img src="assets/images/homes/fernwood-aerial.webp" alt="Grounds and private tennis court at a Westport Family Homes property" loading="lazy" />
-          <figcaption>Nearly two private acres, with room to live, play, and entertain outdoors.</figcaption>
+        <figure class="home">
+          <div class="home__frame"><img src="/assets/images/homes/home-04-ridgewood-lane.webp" width="1200" height="604" alt="Ridgewood Lane, Westport, CT" loading="lazy" decoding="async" sizes="(max-width: 640px) 100vw, 640px"></div>
+          <figcaption><span class="label home__award">HOBI Award Winner</span><span class="home__line"><span class="home__street">Ridgewood Lane</span><span class="home__town">Westport, CT</span></span></figcaption>
         </figure>
-      </div>
     </div>
-  </section>
+    <div class="homes homes--rest">
+        <figure class="home">
+          <div class="home__frame"><img src="/assets/images/homes/fernwood-exterior.webp" width="1280" height="810" alt="Fernwood Road, Westport, CT" loading="lazy" decoding="async" sizes="(max-width: 640px) 50vw, 420px"></div>
+          <figcaption><span class="home__line"><span class="home__street">Fernwood Road</span><span class="home__town">Westport, CT</span></span></figcaption>
+        </figure>
+        <figure class="home">
+          <div class="home__frame home__frame--trim"><img src="/assets/images/homes/home-06-breezy-knoll.webp" width="878" height="890" alt="Breezy Knoll, Westport, CT" loading="lazy" decoding="async" sizes="(max-width: 640px) 50vw, 420px"></div>
+          <figcaption><span class="home__line"><span class="home__street">Breezy Knoll</span><span class="home__town">Westport, CT</span></span></figcaption>
+        </figure>
+        <figure class="home">
+          <div class="home__frame home__frame--trim"><img src="/assets/images/homes/home-07-tamarac-road.webp" width="886" height="882" alt="Tamarac Road, Westport, CT" loading="lazy" decoding="async" sizes="(max-width: 640px) 50vw, 420px"></div>
+          <figcaption><span class="home__line"><span class="home__street">Tamarac Road</span><span class="home__town">Westport, CT</span></span></figcaption>
+        </figure>
+        <figure class="home">
+          <div class="home__frame home__frame--trim"><img src="/assets/images/homes/home-08-keyser-road.webp" width="892" height="878" alt="Keyser Road, Westport, CT" loading="lazy" decoding="async" sizes="(max-width: 640px) 50vw, 420px"></div>
+          <figcaption><span class="home__line"><span class="home__street">Keyser Road</span><span class="home__town">Westport, CT</span></span></figcaption>
+        </figure>
+        <figure class="home">
+          <div class="home__frame home__frame--trim"><img src="/assets/images/homes/home-09-reichert-road.webp" width="894" height="880" alt="Reichert Road, Westport, CT" loading="lazy" decoding="async" sizes="(max-width: 640px) 50vw, 420px"></div>
+          <figcaption><span class="home__line"><span class="home__street">Reichert Road</span><span class="home__town">Westport, CT</span></span></figcaption>
+        </figure>
+        <figure class="home">
+          <div class="home__frame home__frame--trim"><img src="/assets/images/homes/home-10-peters-lane.webp" width="900" height="872" alt="Peters Lane, Westport, CT" loading="lazy" decoding="async" sizes="(max-width: 640px) 50vw, 420px"></div>
+          <figcaption><span class="home__line"><span class="home__street">Peters Lane</span><span class="home__town">Westport, CT</span></span></figcaption>
+        </figure>
+    </div>
+  </div>
+</section>
 
-  <!-- WHY US -->
-  <section class="why" id="about">
-    <div class="why__head">
-      <p class="eyebrow reveal-fade">Westport Family Homes</p>
-      <h2 class="reveal-fade">Built by a Neighbor</h2>
-      <div class="why__people reveal-fade">
-        <div class="why__person">
-          <img src="assets/images/icons/david-popkin.webp" alt="David Popkin, Owner and Builder" loading="lazy" />
-          <span><strong>David Popkin</strong><em>Owner &amp; Builder</em></span>
-        </div>
-        <div class="why__person">
-          <img src="assets/images/icons/lori-popkin.webp" alt="Lori Popkin, Real Estate Broker" loading="lazy" />
-          <span><strong>Lori Popkin</strong><em>Real Estate Broker</em></span>
-        </div>
+<section class="sec ground-parch" id="peeks" aria-labelledby="peeks-h"><span id="spotlight"></span>
+  <div class="wrap">
+    <div class="head">
+      <div class="head__title">
+        <span class="label">A Closer Look</span>
+        <h2 class="display" id="peeks-h">Sneak Peeks</h2>
       </div>
     </div>
-    <div class="why__grid">
-      <div class="why__accordion">
-        <div class="acc-item is-open">
-          <button class="acc-item__trigger">
-            <span>Deep Local Roots</span>
-            <span class="acc-item__icon"></span>
-          </button>
-          <div class="acc-item__panel">
-            <p>Owner David Popkin has lived in Westport for more than 30 years with his wife and three children, all of whom came up through the Westport school system. He has been building homes here for almost two decades &mdash; this is his town, and every home is built with that in mind.</p>
+    <div class="peeks">
+      <figure class="peek">
+        <img src="/assets/images/homes/webb-kitchen.webp" width="1600" height="848" alt="Open-concept kitchen in a Westport Family Homes property" loading="lazy" decoding="async">
+        <figcaption><span class="label">Kitchen</span><p>An open-concept kitchen built for gathering, with custom millwork and a sightline straight through to the great room.</p></figcaption>
+      </figure>
+      <figure class="peek">
+        <img src="/assets/images/homes/webb-living.webp" width="1600" height="848" alt="Living room with a fireplace wall in a Westport Family Homes property" loading="lazy" decoding="async">
+        <figcaption><span class="label">Living room</span><p>A reclaimed-wood fireplace wall anchors the living room in warmth and texture.</p></figcaption>
+      </figure>
+      <figure class="peek">
+        <img src="/assets/images/homes/fernwood-bath.webp" width="1400" height="885" alt="Primary bathroom in a Westport Family Homes property" loading="lazy" decoding="async">
+        <figcaption><span class="label">Primary bath</span><p>A spa-inspired primary bath, finished with a freestanding soaking tub and natural light.</p></figcaption>
+      </figure>
+      <figure class="peek">
+        <img src="/assets/images/homes/fernwood-aerial.webp" width="1175" height="885" alt="Grounds and private tennis court at a Westport Family Homes property" loading="lazy" decoding="async">
+        <figcaption><span class="label">Grounds</span><p>Nearly two private acres, with room to live, play, and entertain outdoors.</p></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec ground-ink on-dark" id="about" aria-labelledby="about-h">
+  <div class="wrap">
+    <div class="neighbor__grid">
+      <div class="neighbor__intro">
+        <span class="label">Westport Family Homes</span>
+        <h2 class="display" id="about-h">Built by a Neighbor</h2>
+        <div class="people">
+          <div class="person">
+            <img src="/assets/images/icons/david-popkin.webp" width="240" height="240" alt="David Popkin, Owner and Builder" loading="lazy" decoding="async">
+            <p><b>David Popkin</b><span>Owner &amp; Builder</span></p>
           </div>
-        </div>
-        <div class="acc-item">
-          <button class="acc-item__trigger">
-            <span>Energy-Efficient by Design</span>
-            <span class="acc-item__icon"></span>
-          </button>
-          <div class="acc-item__panel">
-            <p>As a LEED Certified professional, David stays current with the latest building and environmental techniques &mdash; so every home meets the quality, design, and energy-efficiency standards today's homeowners expect.</p>
-          </div>
-        </div>
-        <div class="acc-item">
-          <button class="acc-item__trigger">
-            <span>Award-Winning Craftsmanship</span>
-            <span class="acc-item__icon"></span>
-          </button>
-          <div class="acc-item__panel">
-            <p>Westport Family Homes has been honored with four HOBI Awards from the Home Building Industry Association of Connecticut &mdash; recognition from the industry for the homes we're proudest of.</p>
-          </div>
-        </div>
-        <div class="acc-item">
-          <button class="acc-item__trigger">
-            <span>Community-Minded</span>
-            <span class="acc-item__icon"></span>
-          </button>
-          <div class="acc-item__panel">
-            <p>David holds an undergraduate degree from Brandeis University and an MBA from Boston University, and currently serves as Vice Chairman of the Board of the Connecticut/Westchester Crohn's and Colitis Foundation.</p>
+          <div class="person">
+            <img src="/assets/images/icons/lori-popkin.webp" width="240" height="240" alt="Lori Popkin, Real Estate Broker" loading="lazy" decoding="async">
+            <p><b>Lori Popkin</b><span>Real Estate Broker</span></p>
           </div>
         </div>
       </div>
-      <div class="why__media reveal-clip">
-        <img src="assets/images/homes/webb-living.webp" alt="A Westport Family Homes living room" loading="lazy" />
+      <div class="pillars">
+        <div class="pillar">
+          <h3>Deep Local Roots</h3>
+          <p>Owner David Popkin has lived in Westport for more than 30 years with his wife and three children, all of whom came up through the Westport school system. He has been building homes here for almost two decades &mdash; this is his town, and every home is built with that in mind.</p>
+        </div>
+        <div class="pillar">
+          <h3>Energy-Efficient by Design</h3>
+          <p>As a LEED Certified professional, David stays current with the latest building and environmental techniques &mdash; so every home meets the quality, design, and energy-efficiency standards today&rsquo;s homeowners expect.</p>
+        </div>
+        <div class="pillar">
+          <h3>Award-Winning Craftsmanship</h3>
+          <p>Westport Family Homes has been honored with four HOBI Awards from the Home Building Industry Association of Connecticut &mdash; recognition from the industry for the homes we&rsquo;re proudest of.</p>
+        </div>
+        <div class="pillar">
+          <h3>Community-Minded</h3>
+          <p>David holds an undergraduate degree from Brandeis University and an MBA from Boston University, and currently serves as Vice Chairman of the Board of the Connecticut/Westchester Crohn&rsquo;s and Colitis Foundation.</p>
+        </div>
       </div>
     </div>
-  </section>
+    <figure class="quote">
+      <blockquote><p>&ldquo;Every home we build is designed the way a family actually lives&nbsp;&mdash; with the quality, comfort, and efficiency to last for decades.&rdquo;</p></blockquote>
+      <figcaption class="label">David Popkin, Owner</figcaption>
+    </figure>
+  </div>
+</section>
 
-  <!-- CINEMATIC BREAK -->
-  <section class="cinematic">
-    <div class="cinematic__img">
-      <img src="assets/images/homes/fernwood-aerial.webp" alt="A Westport Family Homes property from above" loading="lazy" />
-    </div>
-    <div class="cinematic__overlay">
-      <p class="cinematic__text reveal-fade">"Every home we build is designed the way a family actually lives &mdash; with the quality, comfort, and efficiency to last for decades."</p>
-      <p class="cinematic__attr reveal-fade">&mdash; David Popkin, Owner</p>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq">
+<section class="sec" id="faq" aria-labelledby="faq-h">
+  <div class="wrap faq__grid">
     <div class="faq__head">
-      <p class="eyebrow reveal-fade">Questions, Answered</p>
-      <h2 class="reveal-fade">Frequently Asked</h2>
+      <span class="label">Questions, Answered</span>
+      <h2 class="display" id="faq-h">Frequently Asked</h2>
     </div>
     <div class="faq__list">
-      <div class="acc-item">
-        <button class="acc-item__trigger">
-          <span>Do you build custom homes, or from set plans?</span>
-          <span class="acc-item__icon"></span>
-        </button>
-        <div class="acc-item__panel">
-          <p>Every Westport Family Homes property is a new-construction home designed and built to meet the needs of the families of Westport &mdash; balancing timeless design with the layouts today's buyers actually want.</p>
-        </div>
-      </div>
-      <div class="acc-item">
-        <button class="acc-item__trigger">
-          <span>What areas do you build in?</span>
-          <span class="acc-item__icon"></span>
-        </button>
-        <div class="acc-item__panel">
-          <p>Westport Family Homes builds exclusively in Fairfield County, Connecticut.</p>
-        </div>
-      </div>
-      <div class="acc-item">
-        <button class="acc-item__trigger">
-          <span>How can I learn more about 5 Baldwin Place?</span>
-          <span class="acc-item__icon"></span>
-        </button>
-        <div class="acc-item__panel">
-          <p>You can view the full listing through Coldwell Banker, or reach out directly to owner David Popkin or broker Lori Popkin using the contact information below.</p>
-        </div>
-      </div>
-      <div class="acc-item">
-        <button class="acc-item__trigger">
-          <span>Do you work with outside real estate agents?</span>
-          <span class="acc-item__icon"></span>
-        </button>
-        <div class="acc-item__panel">
-          <p>Yes.</p>
-        </div>
-      </div>
+      <details class="qa"><summary>Do you build custom homes, or from set plans?<span class="qa__icon" aria-hidden="true"></span></summary><p>Every Westport Family Homes property is a new-construction home designed and built to meet the needs of the families of Westport &mdash; balancing timeless design with the layouts today&rsquo;s buyers actually want.</p></details>
+      <details class="qa"><summary>What areas do you build in?<span class="qa__icon" aria-hidden="true"></span></summary><p>Westport Family Homes builds exclusively in Fairfield County, Connecticut.</p></details>
+      <details class="qa"><summary>How can I learn more about 5 Baldwin Place?<span class="qa__icon" aria-hidden="true"></span></summary><p>You can view the full listing through Coldwell Banker, or reach out directly to owner David Popkin or broker Lori Popkin using the contact information below.</p></details>
+      <details class="qa"><summary>Do you work with outside real estate agents?<span class="qa__icon" aria-hidden="true"></span></summary><p>Yes.</p></details>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- FOOTER / CONTACT -->
-  <footer class="site-footer" id="contact">
-    <div class="site-footer__cta">
-      <p class="eyebrow reveal-fade">Get in Touch</p>
-      <h2 class="reveal-fade">Let's Build Your Family's Next Chapter</h2>
-      <a href="mailto:WestportFHLLC@gmail.com" class="btn btn--solid reveal-fade">Get in Touch</a>
+<section class="sec ground-parch" id="insights" aria-labelledby="insights-h">
+  <div class="wrap">
+    <div class="head">
+      <div class="head__title">
+        <span class="label">Insights</span>
+        <h2 class="display" id="insights-h">From Our Team to You</h2>
+      </div>
+      <div class="head__aside head__aside--link"><a class="more" href="/insights/"><span>All insights</span></a></div>
     </div>
-
-    <div class="site-footer__grid">
-      <div class="site-footer__brand">
-        <img src="assets/images/icons/logo-full.webp?v=2" alt="Westport Family Homes" class="site-footer__logo" />
-        <div class="site-footer__badge-chip">
-          <img src="assets/images/icons/hobi-awards.webp" alt="HOBI Awards &mdash; Home Building Industry Awards, HBRA of Connecticut" class="site-footer__badge" loading="lazy" />
-        </div>
-      </div>
-
-      <div class="site-footer__col">
-        <h3>Explore</h3>
-        <a href="/5baldwinplace/">5 Baldwin Place</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#spotlight">Sneak Peeks</a>
-        <a href="#about">About</a>
-        <a href="/insights/">Insights</a>
-      </div>
-
-      <div class="site-footer__col">
-        <h3>Owner &amp; Builder</h3>
-        <p>David Popkin</p>
-        <a href="mailto:WestportFHLLC@gmail.com">WestportFHLLC@gmail.com</a>
-        <a href="tel:12038567678">203&#8209;856&#8209;7678</a>
-      </div>
-
-      <div class="site-footer__col">
-        <h3>Real Estate Broker</h3>
-        <p>Lori Popkin, Coldwell Banker</p>
-        <a href="mailto:lori.popkin@cbmoves.com">lori.popkin@cbmoves.com</a>
-        <a href="tel:12039847677">203&#8209;984&#8209;7677</a>
-      </div>
+    <div class="cards">
+      <article class="card">
+        <div class="card__media"><img src="/assets/images/v1/great-room-1600.webp" srcset="/assets/images/v1/great-room-800.webp 800w, /assets/images/v1/great-room-1600.webp 1600w, /assets/images/v1/great-room-2400.webp 2400w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 420px" width="1600" height="1067" alt="Great room and kitchen at 5 Baldwin Place in Westport, Connecticut" loading="lazy" decoding="async"></div>
+        <span class="label">Featured Listing &middot; November 12, 2026</span>
+        <h3><a href="/insights/5-baldwin-place-a-westport-home-designed-to-grow-with-you/">A Westport Home Designed to Grow With You</a></h3>
+        <p>Four finished levels at 5 Baldwin Place, planned for growing children, visiting family, an elevator and a future ADU.</p>
+        <span class="card__more" aria-hidden="true"><span>Read the article</span></span>
+      </article>
+      <article class="card">
+        <div class="card__media"><img src="/assets/images/v1/westport-compo-1600.webp" srcset="/assets/images/v1/westport-compo-800.webp 800w, /assets/images/v1/westport-compo-1600.webp 1600w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 420px" width="1600" height="1066" alt="Compo Beach in Westport, Connecticut" loading="lazy" decoding="async"></div>
+        <span class="label">Life in Westport &middot; September 2, 2026</span>
+        <h3><a href="/insights/ben-stiller-stew-leonards-westport-ct/">When Ben Stiller Came to Stew Leonard&rsquo;s &mdash; And What It Says About Life in Westport, CT</a></h3>
+        <p>Ben Stiller poured his soda at Stew Leonard&rsquo;s in Norwalk, minutes from Westport. A look at what ordinary weekends in Fairfield County are actually like.</p>
+        <span class="card__more" aria-hidden="true"><span>Read the article</span></span>
+      </article>
+      <article class="card">
+        <div class="card__media"><img src="/assets/images/homes/home-03-pine-street.webp" width="1200" height="694" alt="Josh Popkin rebuilds the Westport Family Homes website and brand" loading="lazy" decoding="async"></div>
+        <span class="label">Brand Launch &middot; September 1, 2026</span>
+        <h3><a href="/insights/josh-popkin-rebuilt-westport-family-homes-website-and-brand/">How Josh Popkin Rebuilt the Westport Family Homes Website and Brand</a></h3>
+        <p>How branding, messaging, technical SEO, and Answer Engine Optimization shaped Westport Family Homes&rsquo; new digital presence.</p>
+        <span class="card__more" aria-hidden="true"><span>Read the article</span></span>
+      </article>
     </div>
+  </div>
+</section>
 
-    <nav class="site-footer__guides" aria-label="Guides from Westport Family Homes">
-      <h3>Guides</h3>
-      <div class="site-footer__guides-list">
-        <a href="/insights/how-to-choose-the-best-home-builder-in-westport-connecticut.html">Choosing a Westport Builder</a>
-        <a href="/insights/what-to-know-before-building-a-custom-home-in-westport-connecticut/">Before You Build</a>
-        <a href="/insights/moving-to-connecticut-and-building-a-custom-home/">Moving to Connecticut</a>
-        <a href="/insights/family-floor-plans-in-westport-connecticut-what-to-look-for/">Family Floor Plans</a>
-        <a href="/insights/how-to-design-a-floor-plan-for-your-family/">Designing a Floor Plan</a>
-        <a href="/insights/public-and-private-spaces-in-a-custom-home/">Public and Private Spaces</a>
-        <a href="/insights/foundation-walls-interior-wall-layout/">Foundation Walls</a>
-        <a href="/insights/inside-5-baldwin-place-a-family-centered-floor-plan-in-westport-connecticut/">Inside 5 Baldwin Place</a>
-        <a href="/insights/5-baldwin-place-a-westport-home-designed-to-grow-with-you/">A Home Designed to Grow</a>
-        <a href="/insights/ben-stiller-stew-leonards-westport-ct/">Life in Westport</a>
-      </div>
-    </nav>
-
-    <div class="site-footer__bottom">
-      <p>&copy; 2026 by Westport Family Homes</p>
-      <p class="site-footer__credit"><a href="https://joshpopkin.com" target="_blank" rel="noopener">Positioned by Josh Popkin</a></p>
-    </div>
-  </footer>
-
+<section class="sec contact" id="contact" aria-labelledby="contact-h">
+  <div class="wrap">
+    <div class="contact__mark" aria-hidden="true"></div>
+    <span class="label">Get in Touch</span>
+    <h2 class="display" id="contact-h">Let&rsquo;s Build Your Family&rsquo;s Next Chapter</h2>
+    <a class="btn btn--ink" href="mailto:WestportFHLLC@gmail.com">Get in Touch</a>
+    <p class="contact__direct">David Popkin, Owner &amp; Builder &middot; <a href="tel:12038567678">203&#8209;856&#8209;7678</a></p>
+  </div>
+</section>
 </main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot__grid">
+      <div class="foot__brand">
+        <a class="wm" href="/" aria-label="Westport Family Homes, home">
+          <span class="wm__mark" aria-hidden="true"></span>
+          <span class="wm__text" aria-hidden="true"><span class="wm__w">Westport</span><span class="wm__f">Family Homes</span></span>
+        </a>
+        <div class="foot__badges">
+          <img src="/assets/images/icons/hobi-awards.webp" width="500" height="500" alt="HOBI Awards, Home Building Industry Awards, HBRA of Connecticut" loading="lazy" decoding="async">
+          <a href="https://www.houzz.com/pro/westportfamilyhomes" rel="noopener">Westport Family Homes on Houzz</a>
+        </div>
+      </div>
+      <nav class="foot__col" aria-labelledby="f-explore">
+        <h3 id="f-explore">Explore</h3>
+        <ul>
+          <li><a href="/5baldwinplace/">5 Baldwin Place</a></li>
+          <li><a href="/#portfolio">Portfolio</a></li>
+          <li><a href="/#peeks">Sneak Peeks</a></li>
+          <li><a href="/#about">About</a></li>
+          <li><a href="/insights/">Insights</a></li>
+        </ul>
+      </nav>
+      <div class="foot__col">
+        <h3>Owner &amp; Builder</h3>
+        <ul>
+          <li><p>David Popkin</p></li>
+          <li><a href="mailto:WestportFHLLC@gmail.com">WestportFHLLC@gmail.com</a></li>
+          <li><a href="tel:12038567678">203&#8209;856&#8209;7678</a></li>
+        </ul>
+      </div>
+      <div class="foot__col">
+        <h3>Real Estate Broker</h3>
+        <ul>
+          <li><p>Lori Popkin, Coldwell Banker</p></li>
+          <li><a href="mailto:lori.popkin@cbmoves.com">lori.popkin@cbmoves.com</a></li>
+          <li><a href="tel:12039847677">203&#8209;984&#8209;7677</a></li>
+        </ul>
+      </div>
+    </div>
+    <nav class="foot__guides" aria-labelledby="f-guides">
+      <h3 id="f-guides">Guides</h3>
+      <ul>
+        <li><a href="/insights/how-to-choose-the-best-home-builder-in-westport-connecticut.html">Choosing a Westport Builder</a></li>
+        <li><a href="/insights/what-to-know-before-building-a-custom-home-in-westport-connecticut/">Before You Build</a></li>
+        <li><a href="/insights/moving-to-connecticut-and-building-a-custom-home/">Moving to Connecticut</a></li>
+        <li><a href="/insights/family-floor-plans-in-westport-connecticut-what-to-look-for/">Family Floor Plans</a></li>
+        <li><a href="/insights/how-to-design-a-floor-plan-for-your-family/">Designing a Floor Plan</a></li>
+        <li><a href="/insights/public-and-private-spaces-in-a-custom-home/">Public and Private Spaces</a></li>
+        <li><a href="/insights/foundation-walls-interior-wall-layout/">Foundation Walls</a></li>
+        <li><a href="/insights/inside-5-baldwin-place-a-family-centered-floor-plan-in-westport-connecticut/">Inside 5 Baldwin Place</a></li>
+        <li><a href="/insights/5-baldwin-place-a-westport-home-designed-to-grow-with-you/">A Home Designed to Grow</a></li>
+        <li><a href="/insights/ben-stiller-stew-leonards-westport-ct/">Life in Westport</a></li>
+      </ul>
+    </nav>
+    <div class="foot__base">
+      <p>&copy; 2026 by Westport Family Homes</p>
+      <p class="foot__credit"><a href="https://www.positionstrategygroup.com/" rel="noopener">Position</a></p>
+    </div>
+  </div>
+</footer>
 
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
-<script src="js/main.js?v=10"></script>
+<script src="/js/site.js?v=20261112" defer></script>
 <!-- site-traffic --><script>(function(){try{if(localStorage.getItem('st_off'))return;var q=new URLSearchParams(location.search);var d=JSON.stringify({p:location.pathname,r:document.referrer,u:q.get('utm_source')||''});if(!navigator.sendBeacon||!navigator.sendBeacon('https://traffic.positionstrategygroup.com/__st?s=westportfamilyhomes.com',d)){fetch('https://traffic.positionstrategygroup.com/__st?s=westportfamilyhomes.com',{method:'POST',body:d,keepalive:true,mode:'no-cors'})}}catch(e){}})();</script>
 </body>
 </html>
